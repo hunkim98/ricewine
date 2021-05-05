@@ -17,7 +17,7 @@ class StoreItem(models.Model):
     store = models.ManyToManyField(Store, blank=True, related_name='items')
     itemName = models.CharField(max_length=200)
     description = models.TextField()
-    mainImage = models.ImageField(null=True, blank=True)
+    mainImage = models.ImageField(upload_to="images", null=True, blank=True)
     dateIntroduced = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
