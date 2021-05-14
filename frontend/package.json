@@ -23,6 +23,8 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "react-naver-maps": "0.0.13",
     "react-router-dom": "^5.2.0"
   }
 }

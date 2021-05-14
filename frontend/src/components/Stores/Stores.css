@@ -1,7 +1,29 @@
-.item {
-  background-color: antiquewhite;
+.store_container {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.store_container:hover {
+  background-color: rgb(173, 173, 173);
+}
+.item_image {
+  height: 150px;
+}
+.item img {
+  height: 80%;
+  width: auto;
 }
 
-.item img {
-  width: 10%;
+.item_img .item_name {
+  height: 20%;
+  font-size: 10px;
+}
+
+.img_group {
+  display: flex;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
 }

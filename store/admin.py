@@ -33,6 +33,13 @@ class StoreForm(forms.ModelForm):
 
 class StoreAdmin(admin.ModelAdmin):
     form = StoreForm
+    fields = ('name', 'location', 'description', 'address',
+              'admin_unit_details', 'latitude', 'longditude', 'items')
+
+    readonly_fields = ('admin_unit_details', )
+
+    class Media:
+        js = ('js/naver_search_map.js', )
 
 
 admin.site.register(Store, StoreAdmin)

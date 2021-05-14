@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.utils.html import format_html
 # Create your models here.
 
 
@@ -8,6 +8,14 @@ class Store(models.Model):
     location = models.CharField(max_length=200)
     description = models.TextField()
     address = models.CharField(max_length=200)
+
+    def admin_unit_details(self):  # Button for admin to get to API
+        return format_html(u'<a href="/getLocation/?id=청담동" onclick="return false;" class="button" '
+                           u'id="id_search_naver_map">Search Naver Map</a>')
+    admin_unit_details.allow_tags = True
+    admin_unit_details.short_description = " "
+    latitude = models.CharField(max_length=50, default='')
+    longditude = models.CharField(max_length=50, default='')
 
     def __str__(self):
         return self.name

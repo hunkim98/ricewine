@@ -6,7 +6,7 @@ class StoreItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = StoreItem
-        fields = ("itemName", "description", "mainImage", "dateIntroduced")
+        fields = ("itemName", "description", "mainImage")
 
 
 class StoreSerializer(serializers.ModelSerializer):
@@ -15,4 +15,4 @@ class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
         fields = ('id', 'name', 'location',
-                  'description', 'address', 'items')
+                  'description', 'address', 'latitude', 'longditude', 'items')
