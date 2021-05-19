@@ -14,6 +14,13 @@ body {
 .app_flex_control {
   display: flex;
   flex-direction: row;
+  width: 100%;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 @media all and (max-width: 668px) {

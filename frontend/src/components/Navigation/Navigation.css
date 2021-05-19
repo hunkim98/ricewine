@@ -68,3 +68,14 @@ a {
     text-align: center;
   }
 }
+
+@media all and (max-width: 470px) {
+  .menu {
+    display: block;
+    position: relative;
+    float: left;
+    left: 50%;
+    width: 100px;
+    text-align: center;
+  }
+}
