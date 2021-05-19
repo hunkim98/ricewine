@@ -58,11 +58,14 @@
   font-size: 24px;
   font-weight: 700;
 }
-.lineup_item_name {
+.lineup_item {
   display: table-cell;
   width: 33%;
   padding: 284px 0px 0px 22px;
   transition: padding 0.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .store_blank {
   position: absolute;
@@ -79,9 +82,7 @@
   height: 124px;
 }
 
-.store:hover .signature,
-.store:hover .may2021,
-.store:hover .kakao {
+.store:hover .lineup_item {
   padding: 167px 0px 0px 22px;
 }
 

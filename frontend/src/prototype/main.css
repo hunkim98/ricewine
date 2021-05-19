@@ -33,7 +33,7 @@ a {
 .nav img {
   margin-bottom: 100px;
 }
-/* 기존에 있던 now tag를 .nav .elements로 바꿨습니다 */
+
 now {
   font-weight: 700;
 }

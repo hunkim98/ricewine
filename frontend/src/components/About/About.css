@@ -1,0 +1,253 @@
+.about_contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 80px 80px 80px;
+  width: 100%;
+}
+
+.identity {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 27px;
+}
+
+.title2 {
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 27px;
+  margin-left: 178px;
+}
+
+.paragraph {
+  float: left;
+  width: 335px;
+  margin-left: 400px;
+}
+
+#p_products {
+  margin-left: 183px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.identity_c {
+  float: left;
+  width: 266px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 55px;
+  margin-left: 70px;
+}
+
+.products {
+  margin: 60px 0px;
+}
+
+.products img {
+  float: left;
+  margin-left: 178px;
+}
+
+.products_more {
+  float: left;
+  display: block;
+  width: 10%;
+  margin-left: 70px;
+}
+
+.products_description {
+  float: left;
+  display: block;
+  width: 255px;
+  border-left: 113px;
+  border-left-style: solid;
+  border-left-color: #3e3d3b;
+  padding: 0px 0px 0px 25px;
+  margin: 0px 0px 50px 0px;
+}
+
+#c_green {
+  border-left-color: #6e9022;
+}
+
+#c_yellow {
+  border-left-color: #f9b62b;
+}
+
+#c_purple {
+  border-left-color: #675d8a;
+}
+
+#c_red {
+  border-left-color: #e35161;
+}
+
+#c_brown {
+  border-left-color: #76523f;
+}
+
+.brewery {
+  margin: 60px 0px;
+}
+
+.brewery img {
+  float: left;
+  width: 28%;
+  margin: 20px 0px 0px 70px;
+}
+
+@media all and (max-width: 1510px) {
+  .paragraph {
+    float: left;
+    width: 335px;
+    margin-left: 200px;
+  }
+
+  #p_products {
+    margin-left: 161px;
+  }
+
+  .title2 {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 27px;
+    margin-left: 0px;
+  }
+
+  .products img {
+    float: left;
+    margin-left: 0px;
+  }
+
+  .products_more {
+    float: left;
+    display: block;
+    width: 270px;
+    margin-left: 180px;
+  }
+
+  .products_description {
+    float: right;
+    display: block;
+    width: 255px;
+    border-left: 113px solid #3e3d3b;
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .brewery img {
+    float: left;
+    width: 90%;
+    margin: 20px 0px 0px 70px;
+  }
+}
+
+@media all and (max-width: 1360px) {
+  .paragraph {
+    float: left;
+    width: 335px;
+    margin-left: 100px;
+  }
+
+  #p_products {
+    margin-left: 61px;
+  }
+
+  .products_more {
+    float: left;
+    display: block;
+    width: 270px;
+    margin-left: 180px;
+  }
+}
+
+@media all and (max-width: 858px) {
+  .products_more {
+    float: left;
+    display: block;
+    width: 200px;
+    margin-left: 180px;
+  }
+
+  .products_description {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    border-left: 113px solid #3e3d3b;
+  }
+}
+
+@media all and (max-width: 668px) {
+  .about_contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 27px;
+    margin-left: 10%;
+  }
+
+  .title2 {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 27px;
+    margin-left: 10%;
+  }
+
+  .products img {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .products_more {
+    float: right;
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .products_description {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    border-left: 113px solid #3e3d3b;
+  }
+
+  .paragraph {
+    float: right;
+    width: 43%;
+    margin-right: 10%;
+  }
+
+  .brewery img {
+    width: 80%;
+    margin: 0% 10%;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .products_more {
+    float: right;
+    width: 30%;
+    margin-right: 0%;
+  }
+
+  .products_description {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    border-left: 113px solid #3e3d3b;
+  }
+}

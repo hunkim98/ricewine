@@ -42,7 +42,12 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
                 <span className="lineup">
                   {item.items.map((item_image) => {
                     return (
-                      <div className="lineup_item_name">
+                      <div
+                        className="lineup_item"
+                        style={{
+                          backgroundImage: `url(${item_image.mainImage})`,
+                        }}
+                      >
                         {item_image.itemName}
                       </div>
                       // <div className="item_image">
