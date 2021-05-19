@@ -22,6 +22,8 @@ function Map({ setClickMap, address, addressName, addressInfo }) {
     var infowindow = new naver.maps.InfoWindow({
       content: contentString,
     });
+
+    infowindow.open(map, marker);
   }, []);
   return (
     <div className="popup_container">

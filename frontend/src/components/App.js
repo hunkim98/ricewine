@@ -3,7 +3,9 @@ import { render } from "react-dom";
 import { BrowserRouter, useLocation, Switch, Route } from "react-router-dom";
 import Stores from "./Stores/Stores";
 import Map from "./Stores/Map";
-
+import About from "./About/About";
+import Navigation from "./Navigation/Navigation";
+import "./App.css";
 function App() {
   const [clickMap, setClickMap] = useState(false);
   const [address, setAddress] = useState([0, 0]);
@@ -19,20 +21,25 @@ function App() {
           addressInfo={addressInfo}
         />
       ) : null}
-      <Switch>
-        <Route
-          path="/"
-          render={(props) => (
-            <Stores
-              {...props}
-              setClickMap={setClickMap}
-              setAddress={setAddress}
-              setAddressName={setAddressName}
-              setAddressInfo={setAddressInfo}
-            />
-          )}
-        />
-      </Switch>
+      <div className="app_flex_control">
+        <Navigation />
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={(props) => (
+              <Stores
+                {...props}
+                setClickMap={setClickMap}
+                setAddress={setAddress}
+                setAddressName={setAddressName}
+                setAddressInfo={setAddressInfo}
+              />
+            )}
+          />
+          <Route path="/about" render={(props) => <About {...props} />} />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

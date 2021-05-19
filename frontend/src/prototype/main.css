@@ -1,0 +1,441 @@
+﻿@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+
+/* PC */
+
+body {
+  font-family: "Noto Sans Kr";
+  background-color: hsl(0, 1%, 87%);
+  display: flex;
+  margin: 0px;
+}
+
+/* navigation var */
+
+a {
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+}
+.nav {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 56px;
+
+  position: sticky;
+  display: block;
+  width: 200px;
+  height: 500px;
+  top: 0px;
+  padding: 80px 0px 0px 50px;
+}
+
+.nav img {
+  margin-bottom: 100px;
+}
+/* 기존에 있던 now tag를 .nav .elements로 바꿨습니다 */
+now {
+  font-weight: 700;
+}
+
+/* main contents */
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 80px 80px 80px;
+  width: 100%;
+}
+
+/* about */
+
+.identity {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 27px;
+}
+
+.title2 {
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 27px;
+  margin-left: 178px;
+}
+
+.paragraph {
+  float: left;
+  width: 335px;
+  margin-left: 400px;
+}
+
+#p_products {
+  margin-left: 183px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.identity_c {
+  float: left;
+  width: 266px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 55px;
+  margin-left: 70px;
+}
+
+.products {
+  margin: 60px 0px;
+}
+
+.products img {
+  float: left;
+  margin-left: 178px;
+}
+
+.products_more {
+  float: left;
+  display: block;
+  width: 10%;
+  margin-left: 70px;
+}
+
+.products_description {
+  float: left;
+  display: block;
+  width: 255px;
+  border-left: 113px;
+  border-left-style: solid;
+  border-left-color: #3e3d3b;
+  padding: 0px 0px 0px 25px;
+  margin: 0px 0px 50px 0px;
+}
+
+#c_green {
+  border-left-color: #6e9022;
+}
+
+#c_yellow {
+  border-left-color: #f9b62b;
+}
+
+#c_purple {
+  border-left-color: #675d8a;
+}
+
+#c_red {
+  border-left-color: #e35161;
+}
+
+#c_brown {
+  border-left-color: #76523f;
+}
+
+.brewery {
+  margin: 60px 0px;
+}
+
+.brewery img {
+  float: left;
+  width: 28%;
+  margin: 20px 0px 0px 70px;
+}
+
+/* store */
+
+.store {
+  display: block;
+  position: relative;
+  width: 45%;
+  height: 380px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+@media all and (max-width: 1280px) {
+  .store {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 380px;
+    margin: 20px;
+    overflow: hidden;
+  }
+}
+
+.lineup {
+  display: table;
+  width: 100%;
+  height: 380px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.signature {
+  display: table-cell;
+  background-image: url("signature.jpg");
+  background-position: top center;
+  width: 33%;
+  padding: 284px 0px 0px 22px;
+  transition: padding 0.5s;
+}
+
+.may2021 {
+  display: table-cell;
+  background-image: url("may2021.jpg");
+  background-position: top center;
+  width: 33%;
+  padding: 284px 0px 0px 22px;
+  transition: padding 0.5s;
+}
+
+.kakao {
+  display: table-cell;
+  background-image: url("kakao.jpg");
+  background-position: top center;
+  width: 33%;
+  padding: 284px 0px 0px 22px;
+  transition: padding 0.5s;
+}
+
+.store_blank {
+  position: absolute;
+  display: block;
+  background: #bcbcbc;
+  width: 100%;
+  height: 241px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 25px 8px 0px 8px;
+  transition: height 0.5s;
+}
+
+.store:hover .store_blank {
+  height: 124px;
+}
+
+.store:hover .signature,
+.store:hover .may2021,
+.store:hover .kakao {
+  padding: 167px 0px 0px 22px;
+}
+
+store_name {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+store_ad {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1510px) {
+  .paragraph {
+    float: left;
+    width: 335px;
+    margin-left: 200px;
+  }
+
+  #p_products {
+    margin-left: 161px;
+  }
+
+  .title2 {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 27px;
+    margin-left: 0px;
+  }
+
+  .products img {
+    float: left;
+    margin-left: 0px;
+  }
+
+  .products_more {
+    float: left;
+    display: block;
+    width: 270px;
+    margin-left: 180px;
+  }
+
+  .products_description {
+    float: right;
+    display: block;
+    width: 255px;
+    border-left: 113px solid #3e3d3b;
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .brewery img {
+    float: left;
+    width: 90%;
+    margin: 20px 0px 0px 70px;
+  }
+}
+
+@media all and (max-width: 1360px) {
+  .paragraph {
+    float: left;
+    width: 335px;
+    margin-left: 100px;
+  }
+
+  #p_products {
+    margin-left: 61px;
+  }
+
+  .products_more {
+    float: left;
+    display: block;
+    width: 270px;
+    margin-left: 180px;
+  }
+}
+
+@media all and (max-width: 858px) {
+  .products_more {
+    float: left;
+    display: block;
+    width: 200px;
+    margin-left: 180px;
+  }
+
+  .products_description {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    border-left: 113px solid #3e3d3b;
+  }
+}
+
+/* mobile */
+
+@media all and (max-width: 668px) {
+  body {
+    font-family: "Noto Sans Kr";
+    background-color: #dedddd;
+    display: block;
+    margin: 0px;
+  }
+  .nav {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: center;
+    float: left;
+
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .nav img {
+    position: relative;
+    left: 0%;
+    margin: 15px;
+  }
+
+  .menu_all {
+    position: relative;
+    float: right;
+    left: -50%;
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    float: left;
+    left: 50%;
+    width: 150px;
+    text-align: center;
+  }
+
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 27px;
+    margin-left: 10%;
+  }
+
+  .title2 {
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 27px;
+    margin-left: 10%;
+  }
+
+  .products img {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .products_more {
+    float: right;
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .products_description {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    border-left: 113px solid #3e3d3b;
+  }
+
+  .paragraph {
+    float: right;
+    width: 43%;
+    margin-right: 10%;
+  }
+
+  .brewery img {
+    width: 80%;
+    margin: 0% 10%;
+  }
+}
+
+/* 혹시 몰라 넣어둠 */
+
+@media all and (max-width: 470px) {
+  .menu {
+    display: block;
+    position: relative;
+    float: left;
+    left: 50%;
+    width: 100px;
+    text-align: center;
+  }
+
+  .products_more {
+    float: right;
+    width: 30%;
+    margin-right: 0%;
+  }
+
+  .products_description {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    border-left: 113px solid #3e3d3b;
+  }
+}
