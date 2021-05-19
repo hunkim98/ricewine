@@ -5,6 +5,7 @@ import Stores from "./Stores/Stores";
 import Map from "./Stores/Map";
 import About from "./About/About";
 import Navigation from "./Navigation/Navigation";
+import Contact from "./Contact/Contact";
 import "./App.css";
 function App() {
   const [clickMap, setClickMap] = useState(false);
@@ -38,6 +39,7 @@ function App() {
             )}
           />
           <Route path="/about" render={(props) => <About {...props} />} />
+          <Route path="/contact" render={(props) => <Contact {...props} />} />
         </Switch>
       </div>
     </BrowserRouter>
