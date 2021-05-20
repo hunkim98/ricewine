@@ -50,10 +50,6 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
                       >
                         {item_image.itemName}
                       </div>
-                      // <div className="item_image">
-                      //   <img src={item_image.mainImage} alt="ricewine" />
-                      //   <div className="item_name">{item_image.itemName}</div>
-                      // </div>
                     );
                   })}
                 </span>
