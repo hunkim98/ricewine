@@ -30,3 +30,5 @@ yarn-error.log*
 # .vscode settings
 .vscode/
 
+/frontend/static/frontend/main.js
+
