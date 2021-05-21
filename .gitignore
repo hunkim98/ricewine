@@ -30,7 +30,7 @@ yarn-error.log*
 # .vscode settings
 .vscode/
 
-/frontend/static/frontend/main.js
 
 
 db.sqlite3
+/frontend/static/frontend/main.js
