@@ -88,12 +88,14 @@
 
 .store_name {
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 700;
+  margin-left: 20px;
 }
 
 .store_ad {
   font-size: 24px;
   font-weight: 700;
+  margin-left: 20px;
 }
 
 @media all and (max-width: 668px) {
