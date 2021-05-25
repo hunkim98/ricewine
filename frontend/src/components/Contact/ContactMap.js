@@ -20,13 +20,19 @@ function ContactMap() {
     });
     var contentString = [
       '<div class="iw_inner">',
-      "   <h3>C막걸리 양조장</h3>",
-      "   <p>2층에 위치해 있습니다!</p>",
+      ' <div class="iw_content">',
+      '   <div class="address_title">C막걸리 양조장</div>',
+      '   <div class="address_info">2층으로 오시면 됩니다</div>',
+      " </div>",
+      ' <div class="address_point"></div>',
       "</div>",
     ].join("");
 
     var infowindow = new naver.maps.InfoWindow({
       content: contentString,
+      borderWidth: 0,
+      backgroundColor: "transparent",
+      disableAnchor: true,
     });
 
     infowindow.open(map, marker);
