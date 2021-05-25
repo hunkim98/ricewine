@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./About.css";
 import brewery from "../images/brewery.jpg";
 import colorbar from "../images/colorbar.png";
+
+axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"; //this is needed for 'POST' connection with django server
+axios.defaults.xsrfCookieName = "csrftoken"; //this is needed for 'POST' connection with django server
+
 function About() {
+  const [storeItems, setStoreItems] = useState([]);
+
+  useEffect(() => {
+    fetch("api/storeItems")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setStoreItems({ storeItems: data });
+      });
+  }, []);
   return (
     <div className="about_contents">
       <div className="identity">
@@ -34,7 +51,6 @@ function About() {
 
       <div className="products">
         <div className="title2">Products</div>
-        <img src={colorbar} />
         <span className="paragraph" id="p_products">
           <p>
             　우리쌀과 누룩, 다양한 천연 컬러푸드와 약재·허브를 조합하여
@@ -49,6 +65,26 @@ function About() {
             </b>
           </p>
         </span>
+        <div className="ricewine_product_container">
+          {storeItems.length == 0
+            ? null
+            : storeItems.storeItems.map((ricewine) => {
+                return (
+                  <div className="ricewine_product">
+                    <div
+                      className="ricewine_img"
+                      style={{ backgroundImage: `url(${ricewine.mainImage})` }}
+                    ></div>
+                    <div className="ricewine_basic_info">
+                      <div className="ricewine_name">{ricewine.itemName}</div>
+                      <div className="ricewine_description">
+                        {ricewine.description}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+        </div>
 
         <span className="products_more">
           <span className="products_description" id="c_signature">
