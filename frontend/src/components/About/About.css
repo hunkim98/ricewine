@@ -25,7 +25,7 @@
 .paragraph {
   float: left;
   width: 335px;
-  margin-left: 400px;
+  margin-left: 183px;
 }
 
 #p_products {
@@ -52,6 +52,10 @@ p {
   margin: 60px 0px;
 }
 
+#p_products{
+    float: none;
+}
+
 .products img {
   float: left;
   margin-left: 178px;
@@ -60,17 +64,21 @@ p {
 /* 여기부분만 추가했습니다. map function 안에 있는 className입니다 */
 
 .ricewine_product_container {
-  float: left;
+	display: block;
+	width: 255px;
+	padding-left: 25px;
+	margin-left: 183px;
 }
 
 .ricewine_product {
   display: flex;
-  flex-direction: row;
-  height: 150px;
+  flex-direction: row;;
+  margin: 25px 0px
 }
 
 .ricewine_img {
-  min-width: 90px;
+  display: block;
+  min-width: 721px;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,28 +86,30 @@ p {
 }
 
 .ricewine_name {
+  font-weight:700;
   font-size: 18px;
+  line-height: 30px;
 }
 .ricewine_description {
-  font-size: 13px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /* ricewine 수정부분은 여기까지입니다 */
 
 .products_more {
-  float: left;
   display: block;
 }
 
-.products_description {
-  float: left;
-  display: block;
-  width: 255px;
-  border-left: 113px;
-  border-left-style: solid;
-  border-left-color: #3e3d3b;
-  padding: 0px 0px 0px 25px;
-  margin: 0px 0px 50px 0px;
+.products_description{
+	float: left;
+	display: block;
+	width: 255px;
+	border-left: 721px;
+	border-left-style: solid;
+	border-left-color: #3E3D3B;
+	padding: 0px 0px 0px 25px;
+	margin: 0px 0px 50px 183px;
 }
 
 #c_green {
@@ -127,26 +137,16 @@ p {
 }
 
 .brewery img {
-  float: left;
-  width: 28%;
+  width: 100%;
   margin: 20px 0px 0px 70px;
 }
 
 @media all and (max-width: 1510px) {
-  .paragraph {
-    float: left;
-    width: 335px;
-    margin-left: 200px;
-  }
-
   #p_products {
     margin-left: 161px;
   }
 
   .title2 {
-    font-weight: 900;
-    font-size: 48px;
-    margin-bottom: 27px;
     margin-left: 0px;
   }
 
@@ -156,33 +156,22 @@ p {
   }
 
   .products_more {
-    float: left;
-    display: block;
     width: 270px;
     margin-left: 180px;
   }
 
   .products_description {
-    float: right;
-    display: block;
-    width: 255px;
-    border-left: 113px solid #3e3d3b;
-    padding: 0px 0px 0px 25px;
     margin: 0px 0px 50px 0px;
   }
 
   .brewery img {
-    float: left;
     width: 90%;
-    margin: 20px 0px 0px 70px;
   }
 }
 
 @media all and (max-width: 1360px) {
   .paragraph {
-    float: left;
-    width: 335px;
-    margin-left: 100px;
+    margin-left: 61px;
   }
 
   #p_products {
@@ -190,11 +179,17 @@ p {
   }
 
   .products_more {
-    float: left;
-    display: block;
-    width: 270px;
-    margin-left: 180px;
+  margin-left: 61px
   }
+
+  .products_description{
+	border-left: 221px;
+
+}
+
+  .ricewine_product_container {
+	margin-left: 61px;
+}
 }
 
 @media all and (max-width: 858px) {
@@ -220,42 +215,45 @@ p {
     margin: 0px;
     width: 100%;
   }
-  .title {
-    font-weight: 900;
-    font-size: 48px;
-    margin-bottom: 27px;
-    margin-left: 10%;
+  .title{
+	font-size: 36px;
+	margin: 42px 0px;
+	text-align: center;
   }
-
-  .title2 {
-    font-weight: 900;
-    font-size: 48px;
-    margin-bottom: 27px;
-    margin-left: 10%;
-  }
+  .title2{
+	font-size: 36px;
+	margin: 42px 0px;
+	text-align: center;
+	}
 
   .products img {
     float: left;
     margin-left: 10%;
   }
 
-  .products_more {
-    float: right;
-    width: 30%;
-    margin-right: 10%;
+  .products_more{
+	width: 35%;
+	margin-right: 60px;
+	margin-left: 60px;
   }
 
-  .products_description {
-    float: right;
-    width: 100%;
-    margin-right: 0%;
-    border-left: 113px solid #3e3d3b;
+  .products_description{
+	float: left;
+    width: 80%;
+	border-left: 260px solid #3E3D3B;
   }
 
-  .paragraph {
-    float: right;
-    width: 43%;
-    margin-right: 10%;
+  .paragraph{
+	width: 39%;
+	margin-left: 60px;
+  }
+
+  .identity_c{
+	float: right;
+	width: 35%;
+	font-size: 30px;
+	margin-right:60px;
+	margin-left: 0px;
   }
 
   .brewery img {

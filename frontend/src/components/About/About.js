@@ -51,7 +51,7 @@ function About() {
 
       <div className="products">
         <div className="title2">Products</div>
-        <span className="paragraph" id="p_products">
+        <div className="paragraph" id="p_products">
           <p>
             　우리쌀과 누룩, 다양한 천연 컬러푸드와 약재·허브를 조합하여
             창의적이고 기발한 맛, 색, 향을 담아낸 6가지 제품을 소개합니다.
@@ -64,19 +64,15 @@ function About() {
               <br />
             </b>
           </p>
-        </span>
+        </div>
         <div className="ricewine_product_container">
           {storeItems.length == 0
             ? null
             : storeItems.storeItems.map((ricewine) => {
                 return (
                   <div className="ricewine_product">
-                    <div
-                      className="ricewine_img"
-                      style={{ backgroundImage: `url(${ricewine.mainImage})` }}
-                    ></div>
                     <div className="ricewine_basic_info">
-                      <div className="ricewine_name">{ricewine.itemName}</div>
+                      <div className="ricewine_name">{ricewine.itemName}</div> <br />
                       <div className="ricewine_description">
                         {ricewine.description}
                       </div>
