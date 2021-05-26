@@ -16,9 +16,13 @@ class Store(models.Model):
     admin_unit_details.short_description = " "
     latitude = models.CharField(max_length=50, default='')
     longditude = models.CharField(max_length=50, default='')
+    hidden = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.name
+        if self.hidden:
+            return self.name + " ( HIDDEN )"
+        else:
+            return self.name
 
 
 class StoreItem(models.Model):

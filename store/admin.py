@@ -1,6 +1,7 @@
 from django import forms
-from django.contrib import admin
+from django.contrib import admin, messages
 from .models import Store, StoreItem
+from django.utils.translation import ngettext
 
 
 class StoreForm(forms.ModelForm):
@@ -33,10 +34,31 @@ class StoreForm(forms.ModelForm):
 
 class StoreAdmin(admin.ModelAdmin):
     form = StoreForm
-    fields = ('name', 'location', 'description', 'address',
+    fields = ('hidden', 'name', 'location', 'description', 'address',
               'admin_unit_details', 'latitude', 'longditude', 'items')
 
     readonly_fields = ('admin_unit_details', )
+    actions = ['make_hidden', 'make_visible']
+
+    @admin.action(description='Hide selected stores')
+    def make_hidden(self, request, queryset):
+        updated = queryset.update(hidden=True)
+        queryset.update(hidden=True)
+        self.message_user(request, ngettext(
+            '%d store was successfully marked as hidden.',
+            '%d stores were successfully marked as hidden',
+            updated,
+        ) % updated, messages.SUCCESS)
+
+    @admin.action(description='Show selected stores')
+    def make_visible(self, request, queryset):
+        updated = queryset.update(hidden=False)
+        queryset.update(hidden=False)
+        self.message_user(request, ngettext(
+            '%d store was successfully marked as visible.',
+            '%d stores were successfully marked as visible',
+            updated,
+        ) % updated, messages.SUCCESS)
 
     class Media:
         js = ('js/naver_search_map.js', )

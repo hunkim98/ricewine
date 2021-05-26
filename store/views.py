@@ -1,5 +1,3 @@
-from django.db.models.query import QuerySet
-from django.shortcuts import render
 from rest_framework import viewsets, permissions
 from .serializers import StoreSerializer, StoreItemSerializer
 from .models import Store, StoreItem
