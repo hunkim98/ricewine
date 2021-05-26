@@ -10,7 +10,7 @@ class Store(models.Model):
     address = models.CharField(max_length=200)
 
     def admin_unit_details(self):  # Button for admin to get to API
-        return format_html(u'<a href="/getLocation/?id=청담동" onclick="return false;" class="button" '
+        return format_html(u'<a href="#" onclick="return false;" class="button" '
                            u'id="id_search_naver_map">Search Naver Map</a>')
     admin_unit_details.allow_tags = True
     admin_unit_details.short_description = " "
