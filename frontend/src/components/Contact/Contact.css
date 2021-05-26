@@ -4,21 +4,31 @@
 	width: 100%;
 }
 
+#contact_title{
+	display: inline;
+}
+
+.contact_icons{
+	display: inline;
+}
+
 .contact img{
 	float: right;
 	margin: 0px 5px;
-	width: 40px;
+	width: 35px;
 	height: auto;
+	opacity: 0.3;
 }
 
 .contact_text{
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 24px;
+	margin-top: 125px;
 }
 
 .contact_text2{
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 18px;
 }
 
 .map{
@@ -48,9 +58,18 @@
 		width: 100%;
 	}
 
+	#contact_title{
+		display: block;
+		margin: 42px 0px 0px 0px;
+	}
+
+	.contact_icons{
+		text-align: right;
+		float: right;
+	}
+
 	.contact img{
 		float: none;
-		width: 5%;
 		margin: 0px;
 	}
 
