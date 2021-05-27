@@ -6,6 +6,13 @@
 .store_container:hover {
   background-color: rgb(173, 173, 173);
 }
+#store_paragraph {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 125px;
+    margin-bottom: 60px;
+	width: 351px;
+}
 .item_image {
   height: 150px;
 }
@@ -104,5 +111,18 @@
     flex-wrap: wrap;
     margin: 0px;
     width: 100%;
+  }
+
+  .store {
+    height: 247px;
+  }
+
+  .store_blank {
+    height: 171px;
+  }
+
+  #store_paragraph {
+    margin-top: 0px;
+    margin-left: 60px;
   }
 }
