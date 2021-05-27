@@ -71,8 +71,13 @@ function About() {
             : storeItems.storeItems.map((ricewine) => {
                 return (
                   <div className="ricewine_product">
+                    <div
+                      className="ricewine_img"
+                      style={{ backgroundImage: `url(${ricewine.mainImage})` }}
+                    ></div>
                     <div className="ricewine_basic_info">
-                      <div className="ricewine_name">{ricewine.itemName}</div> <br />
+                      <div className="ricewine_name">{ricewine.itemName}</div>{" "}
+                      <br />
                       <div className="ricewine_description">
                         {ricewine.description}
                       </div>

@@ -52,8 +52,8 @@ p {
   margin: 60px 0px;
 }
 
-#p_products{
-    float: none;
+#p_products {
+  float: none;
 }
 
 .products img {
@@ -64,29 +64,29 @@ p {
 /* 여기부분만 추가했습니다. map function 안에 있는 className입니다 */
 
 .ricewine_product_container {
-	display: block;
-	width: 255px;
-	padding-left: 25px;
-	margin-left: 183px;
+  display: block;
+  width: 255px;
+  padding-left: 25px;
+  margin-left: 183px;
 }
 
 .ricewine_product {
   display: flex;
-  flex-direction: row;;
-  margin: 25px 0px
+  flex-direction: row;
+  margin: 25px 0px;
 }
 
 .ricewine_img {
   display: block;
-  min-width: 721px;
-  height: 100%;
+  min-width: 90px;
+  height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .ricewine_name {
-  font-weight:700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
@@ -101,15 +101,15 @@ p {
   display: block;
 }
 
-.products_description{
-	float: left;
-	display: block;
-	width: 255px;
-	border-left: 721px;
-	border-left-style: solid;
-	border-left-color: #3E3D3B;
-	padding: 0px 0px 0px 25px;
-	margin: 0px 0px 50px 183px;
+.products_description {
+  float: left;
+  display: block;
+  width: 255px;
+  border-left: 721px;
+  border-left-style: solid;
+  border-left-color: #3e3d3b;
+  padding: 0px 0px 0px 25px;
+  margin: 0px 0px 50px 183px;
 }
 
 #c_green {
@@ -179,17 +179,16 @@ p {
   }
 
   .products_more {
-  margin-left: 61px
+    margin-left: 61px;
   }
 
-  .products_description{
-	border-left: 221px;
-
-}
+  .products_description {
+    border-left: 221px;
+  }
 
   .ricewine_product_container {
-	margin-left: 61px;
-}
+    margin-left: 61px;
+  }
 }
 
 @media all and (max-width: 858px) {
@@ -215,46 +214,46 @@ p {
     margin: 0px;
     width: 100%;
   }
-  .title{
-	font-size: 36px;
-	margin: 42px 0px;
-	text-align: center;
+  .title {
+    font-size: 36px;
+    margin: 42px 0px;
+    text-align: center;
     width: 100%;
   }
-  .title2{
-	font-size: 36px;
-	margin: 42px 0px;
-	text-align: center;
-	}
+  .title2 {
+    font-size: 36px;
+    margin: 42px 0px;
+    text-align: center;
+  }
 
   .products img {
     float: left;
     margin-left: 10%;
   }
 
-  .products_more{
-	width: 35%;
-	margin-right: 60px;
-	margin-left: 60px;
+  .products_more {
+    width: 35%;
+    margin-right: 60px;
+    margin-left: 60px;
   }
 
-  .products_description{
-	float: left;
+  .products_description {
+    float: left;
     width: 80%;
-	border-left: 260px solid #3E3D3B;
+    border-left: 260px solid #3e3d3b;
   }
 
-  .paragraph{
-	width: 39%;
-	margin-left: 60px;
+  .paragraph {
+    width: 39%;
+    margin-left: 60px;
   }
 
-  .identity_c{
-	float: right;
-	width: 35%;
-	font-size: 30px;
-	margin-right:60px;
-	margin-left: 0px;
+  .identity_c {
+    float: right;
+    width: 35%;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-left: 0px;
   }
 
   .brewery img {
