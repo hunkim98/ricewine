@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "./About.css";
 import brewery from "../images/brewery.jpg";
 import colorbar from "../images/colorbar.png";
-
-axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"; //this is needed for 'POST' connection with django server
-axios.defaults.xsrfCookieName = "csrftoken"; //this is needed for 'POST' connection with django server
 
 function About() {
   const [storeItems, setStoreItems] = useState([]);
