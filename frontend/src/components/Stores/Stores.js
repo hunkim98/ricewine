@@ -1,10 +1,6 @@
 ﻿import React, { useEffect, useState } from "react";
-import axios from "axios";
 
 import "./Stores.css";
-
-axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"; //this is needed for 'POST' connection with django server
-axios.defaults.xsrfCookieName = "csrftoken"; //this is needed for 'POST' connection with django server
 
 function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
   const [storeList, setStoreList] = useState([]);
@@ -22,15 +18,14 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
 
   return (
     <div className="contents">
-        <div className="title">store</div>
-        <div id="store_paragraph">
-          <p>
-            　매장마다 재고상황이 상이할 수 있으므로
-            방문하시고자 하는 가게에 재고가 있는지
-            미리 문의해보시기를 부탁드립니다!
-          </p>
-        </div>
-        <hr size="2px" width="100%" color="black" />
+      <div className="title">store</div>
+      <div id="store_paragraph">
+        <p>
+          　매장마다 재고상황이 상이할 수 있으므로 방문하시고자 하는 가게에
+          재고가 있는지 미리 문의해보시기를 부탁드립니다!
+        </p>
+      </div>
+      <hr size="2px" width="100%" color="black" />
       {storeList.length == 0
         ? null
         : storeList.stores.map((item) => {
