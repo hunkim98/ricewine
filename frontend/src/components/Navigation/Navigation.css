@@ -23,7 +23,7 @@ a {
   padding: 80px 0px 0px 50px;
 }
 
-.nav img {
+#logo{
   margin-bottom: 100px;
 }
 
@@ -31,6 +31,19 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.nav_icons{
+	display: inline;
+}
+
+.nav_icons img{
+	float: left;
+	margin: 5px;
+	width: 35px;
+	height: auto;
+	opacity: 0.3;
+}
+
 @media all and (max-width: 668px) {
   .nav {
     font-weight: 400;

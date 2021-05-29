@@ -8,6 +8,7 @@
 }
 #store_paragraph {
     font-size: 14px;
+    font-weight: 500;
     line-height: 20px;
     margin-top: 125px;
     margin-bottom: 60px;
@@ -31,10 +32,13 @@
 }
 
 .contents {
-  display: flex;
-  flex-wrap: wrap;
   margin: 80px 80px 80px 80px;
   width: 100%;
+}
+
+.store_list{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .store {
@@ -107,10 +111,7 @@
 
 @media all and (max-width: 668px) {
   .contents {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0px;
-    width: 100%;
   }
 
   .store {

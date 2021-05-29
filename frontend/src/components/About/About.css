@@ -65,8 +65,7 @@ p {
 
 .ricewine_product_container {
   display: block;
-  width: 255px;
-  padding-left: 25px;
+  width: 1020px;
   margin-left: 183px;
 }
 
@@ -78,8 +77,9 @@ p {
 
 .ricewine_img {
   display: block;
-  min-width: 90px;
-  height: 150px;
+  min-width: 721px;
+  height: 190px;
+  margin-right: 25px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
