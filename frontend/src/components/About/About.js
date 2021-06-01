@@ -19,7 +19,7 @@ function About() {
   return (
     <div className="about_contents">
       <div className="identity">
-        <div className="title">C막걸리 Identity</div>
+        <div className="title">Identity</div>
         <span className="paragraph">
           <p>
             C막걸리는 전통과 현재가 공존하고 융합하는 우리 고유 양조문화, 특히
@@ -136,7 +136,7 @@ function About() {
       <hr size="2px" width="100%" color="black" />
 
       <div className="brewery">
-        <div className="title2">brewery</div>
+        <div className="title2">Brewery</div>
         <span className="paragraph">
           <p>
             서울 강남 최초의 도심 속 전용 양조장 C막걸리에서 다이나믹한 도시의

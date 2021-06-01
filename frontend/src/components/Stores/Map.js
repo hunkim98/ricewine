@@ -35,7 +35,7 @@ function Map({ setClickMap, address, addressName, addressInfo }) {
     <div className="popup_container">
       <div className="content">
         <div className="upper_bar">
-          <div className="title">네이버 지도</div>
+          <div className="title">위치</div>
           <div className="close" onClick={() => setClickMap(false)}>
             닫기
           </div>
