@@ -26,6 +26,11 @@ function Navigation() {
             Contact
           </NavLink>
         </span>
+        <span className="menu">
+          <NavLink to="/news" activeClassName="now">
+            News
+          </NavLink>
+        </span>
 
         <div className="nav_icons">
           <a href="https://www.facebook.com/cmakgeolli">
@@ -35,7 +40,6 @@ function Navigation() {
             <img src={instagram} />{" "}
           </a>
         </div>
-
       </span>
     </div>
   );
