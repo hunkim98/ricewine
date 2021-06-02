@@ -11,19 +11,17 @@
 }
 
 .popup_container .content {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   width: 100%;
   margin-right: 3vw;
   margin-left: 3vw;
   max-width: 600px;
   min-width: 220px;
-  padding: 10px 20px;
+  padding: 10px 20px 20px 20px;
   background: #bcbcbc;
   border-radius: 5px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   font-weight: 700;
-  color: #333333;
   display: flex;
   flex-direction: column;
 }
@@ -55,6 +53,10 @@
   width: 3px;
   height: 10px;
   background-color: black;
+}
+
+.address_info{
+	font-weight: 400;
 }
 
 .popup_container #map {

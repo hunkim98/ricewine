@@ -27,22 +27,22 @@
 }
 
 @media all and (max-width:1205px) {
-.news_detail{
-	display: inline;
-}
+	.news_detail{
+		display: inline;
+	}
 }
 
 @media all and (max-width:668px) {
-.news_contents {
-	margin: 0px;
-}
+	.news_contents {
+		margin: 20px;
+	}
 
-.news_year{
-	margin: 0px 20px 105px 20px;
-}
+	.news_year{
+		margin: 0px 20px 105px 20px;
+	}
 
-.news_detail{
-	display: flex;
-}
+	.news_detail{
+		display: flex;
+	}
 
 }

@@ -2,7 +2,7 @@
   position: absolute;
   right: -20px;
   top: -20px;
-  z-index: 3;
+  z-index: 1;
   width: 90px;
   height: 90px;
   display: flex;
@@ -121,11 +121,16 @@
 
 @media all and (max-width: 668px) {
   .contents {
-    margin: 0px;
+    margin: 20px;
   }
+
+  .store_list {
+    margin-left: 20px;
+  }
+
   .store_more{
     height: 247px;
-}
+   }
 
   .store_blank {
     height: 171px;

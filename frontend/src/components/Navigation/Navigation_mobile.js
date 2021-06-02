@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./Navigation_mobile.css";
 import { NavLink } from "react-router-dom";
+import menu from "../images/navigation_menu.png";
 
 function Navigation_mobile() {
   const [click, setClick] = useState(false);
@@ -18,27 +19,32 @@ function Navigation_mobile() {
                 About
               </NavLink>
             </span>
+            <hr size="2px" width="80%" color="#858585" />
             <span className="mobile_menu" onClick={closeMobileMenu}>
               <NavLink exact to="/" activeClassName="now">
                 Store
               </NavLink>
             </span>
+            <hr size="2px" width="80%" color="#858585" />
             <span className="mobile_menu" onClick={closeMobileMenu}>
               <NavLink to="/contact" activeClassName="now">
                 Contact
               </NavLink>
             </span>
+            <hr size="2px" width="80%" color="#858585" />
             <span className="mobile_menu" onClick={closeMobileMenu}>
               <NavLink to="/news" activeClassName="now">
                 News
               </NavLink>
+            <hr size="2px" width="80%" color="#858585" />
             </span>
+
           </div>
           <div className="mobile_menu_behind" onClick={closeMobileMenu}></div>
         </div>
       ) : (
         <div className="mobile_nav_button" onClick={handleClick}>
-          MENU
+          <img src={menu} />{" "}
         </div>
       )}
     </div>

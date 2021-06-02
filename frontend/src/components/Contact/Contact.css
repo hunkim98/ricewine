@@ -48,11 +48,11 @@
 
 @media all and (max-width:668px) {
 	.contact{
-		margin: 0px;
+		margin: 20px;
 	}
 
 	#contact_title{
-		margin: 42px 0px;
+		margin: 0px;
 	}
 
 	.contact_icons{
