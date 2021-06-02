@@ -19,7 +19,7 @@ function About() {
   return (
     <div className="about_contents">
       <div className="identity">
-        <div className="title">Identity</div>
+        <div className="title2">Identity</div>
         <span className="paragraph">
           <p>
             C막걸리는 전통과 현재가 공존하고 융합하는 우리 고유 양조문화, 특히
@@ -82,55 +82,6 @@ function About() {
                 );
               })}
         </div>
-
-        <span className="products_more">
-          <span className="products_description" id="c_signature">
-            <p>
-              <b>C막걸리 시그니처큐베</b> <br />
-              <br />
-              C막걸리의 시그니처 제품. 범벅으로 밑술을 고집하여 부드러운
-              텍스처와 주니퍼베리, 건포도의 유쾌한 산미가 특징입니다.
-            </p>
-          </span>
-          <span className="products_description" id="c_green">
-            <p>
-              <b>C 그린막걸리</b> <br />
-              <br />
-              호불호의 끝판왕. 녹즙을 마시는 듯한 케일의 건강한 맛과 개똥쑥의
-              강렬한 향의 조합이 특징입니다.
-            </p>
-          </span>
-          <span className="products_description" id="c_yellow">
-            <p>
-              <b>C 옐로막걸리</b> <br />
-              <br />
-              동남아 요리에 어울리는 막걸리. 당근의 담백함, 레몬그라스의
-              이국적인 향기와 함께 전례 없는 페어링을 제안합니다.
-            </p>
-          </span>
-          <span className="products_description" id="c_purple">
-            <p>
-              <b>C 퍼플막걸리</b> <br />
-              <br />
-              우아하고 몽환적인 보랏빛 향기. 블루베리와 라벤더의 상큼함과
-              편안함에 빠져들게 됩니다.
-            </p>
-          </span>
-          <span className="products_description" id="c_red">
-            <p>
-              <b>C 레드막걸리</b> <br />
-              <br />단 술이 싫은 진짜 주당을 위한 막걸리. 비트루트와
-              꾸지뽕잎으로 빨강의 고정관념을 깨는 드라이한 반전을 선사합니다.
-            </p>
-          </span>
-          <span className="products_description" id="c_brown">
-            <p>
-              <b>C 브라운막걸리</b> <br />
-              <br />달콤쌉쌀한 다크초콜릿의 재해석. 카카오닙스와 진피를 넣어
-              만든 진짜 천연 초콜릿 막걸리가 드디어 나왔습니다.
-            </p>
-          </span>
-        </span>
       </div>
 
       <hr size="2px" width="100%" color="black" />

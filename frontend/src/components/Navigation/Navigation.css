@@ -25,6 +25,7 @@ a {
 
 #logo{
   margin-bottom: 100px;
+  width: 139px;
 }
 
 .menu_all {
@@ -38,7 +39,7 @@ a {
 
 .nav_icons img{
 	float: left;
-	margin: 5px;
+	margin: 7.5px;
 	width: 35px;
 	height: auto;
 	opacity: 0.3;
