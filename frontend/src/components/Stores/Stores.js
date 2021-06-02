@@ -42,24 +42,26 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
                   <div className="store_short_location">
                     {item.location.substr(0, item.location.indexOf(" "))}
                   </div>
-                  <div className="store_blank">
-                    <div className="store_name">{item.name}</div>
-                    <div className="store_ad">{item.location}</div>
+                  <div className="store_more">
+                      <div className="store_blank">
+                        <div className="store_name">{item.name}</div>
+                        <div className="store_ad">{item.location}</div>
+                      </div>
+                      <span className="lineup">
+                        {item.items.map((item_image) => {
+                          return (
+                            <div
+                              className="lineup_item"
+                              style={{
+                                backgroundImage: `url(${item_image.mainImage})`,
+                              }}
+                            >
+                              {item_image.itemName}
+                            </div>
+                          );
+                        })}
+                      </span>
                   </div>
-                  <span className="lineup">
-                    {item.items.map((item_image) => {
-                      return (
-                        <div
-                          className="lineup_item"
-                          style={{
-                            backgroundImage: `url(${item_image.mainImage})`,
-                          }}
-                        >
-                          {item_image.itemName}
-                        </div>
-                      );
-                    })}
-                  </span>
                 </div>
               );
             })}
