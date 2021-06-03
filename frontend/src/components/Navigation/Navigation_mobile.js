@@ -14,31 +14,30 @@ function Navigation_mobile() {
       {click ? (
         <div className="mobile_menu_opened_container">
           <div className="mobile_menu_all">
-            <span className="mobile_menu" onClick={closeMobileMenu}>
-              <NavLink to="/about" activeClassName="now">
+            <NavLink to="/about" activeClassName="now">
+              <span className="mobile_menu" onClick={closeMobileMenu}>
                 About
-              </NavLink>
-            </span>
+              </span>
+            </NavLink>
             <hr size="2px" width="80%" color="#858585" />
-            <span className="mobile_menu" onClick={closeMobileMenu}>
-              <NavLink exact to="/" activeClassName="now">
+            <NavLink exact to="/" activeClassName="now">
+              <span className="mobile_menu" onClick={closeMobileMenu}>
                 Store
-              </NavLink>
-            </span>
+              </span>
+            </NavLink>
             <hr size="2px" width="80%" color="#858585" />
-            <span className="mobile_menu" onClick={closeMobileMenu}>
-              <NavLink to="/contact" activeClassName="now">
+            <NavLink to="/contact" activeClassName="now">
+              <span className="mobile_menu" onClick={closeMobileMenu}>
                 Contact
-              </NavLink>
-            </span>
+              </span>
+            </NavLink>
             <hr size="2px" width="80%" color="#858585" />
-            <span className="mobile_menu" onClick={closeMobileMenu}>
-              <NavLink to="/news" activeClassName="now">
+            <NavLink to="/news" activeClassName="now">
+              <span className="mobile_menu" onClick={closeMobileMenu}>
                 News
-              </NavLink>
-            <hr size="2px" width="80%" color="#858585" />
-            </span>
-
+                <hr size="2px" width="80%" color="#858585" />
+              </span>
+            </NavLink>
           </div>
           <div className="mobile_menu_behind" onClick={closeMobileMenu}></div>
         </div>

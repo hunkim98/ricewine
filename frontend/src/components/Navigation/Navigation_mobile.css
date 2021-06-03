@@ -14,6 +14,10 @@
   height: 100%;
 }
 
+.mobile_menu {
+  pointer-events: auto;
+}
+
 .mobile_menu_all {
   top: 34px;
   right: 30px;
