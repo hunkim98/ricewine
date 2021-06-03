@@ -69,7 +69,7 @@ function About() {
                   <div className="ricewine_product">
                     <div
                       className="ricewine_img"
-                      style={{ backgroundImage: `url(${ricewine.mainImage})` }}
+                      style={{ backgroundImage: `url(${ricewine.img_url})` }}
                     ></div>
                     <div className="ricewine_basic_info">
                       <div className="ricewine_name">{ricewine.itemName}</div>{" "}
