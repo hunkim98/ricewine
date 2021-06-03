@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.html import format_html
+from cloudinary.models import CloudinaryField
 # Create your models here.
 
 
@@ -29,7 +30,7 @@ class StoreItem(models.Model):
     store = models.ManyToManyField(Store, blank=True, related_name='items')
     itemName = models.CharField(max_length=200)
     description = models.TextField()
-    mainImage = models.ImageField(upload_to="images", null=True, blank=True)
+    mainImage = CloudinaryField('image')
     dateIntroduced = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

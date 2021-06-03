@@ -3,10 +3,16 @@ from .models import Store, StoreItem
 
 
 class StoreItemSerializer(serializers.ModelSerializer):
+    img_url = serializers.SerializerMethodField()
 
     class Meta:
         model = StoreItem
-        fields = ("itemName", "description", "mainImage")
+        fields = ("itemName", "description", "img_url")
+
+    def get_img_url(self, document):
+        request = self.context.get('request')
+        img_url = document.mainImage.url
+        return request.build_absolute_uri(img_url)
 
 
 class StoreSerializer(serializers.ModelSerializer):

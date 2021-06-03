@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,6 +30,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+cloudinary.config(
+    cloud_name="cmakgeoli",
+    api_key="655279364462448",
+    api_secret="h3k9LHb3Na24TWsAT1-ySPKPH8g"
+)
+
 
 # Application definition
 
@@ -40,7 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'frontend'
+    'frontend',
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -123,14 +133,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join('static'), )
-MEDIA_URL = '/images/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
 ]
