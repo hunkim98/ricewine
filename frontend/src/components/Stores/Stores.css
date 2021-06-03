@@ -46,7 +46,6 @@
 
 .contents {
   margin: 80px 80px 80px 80px;
-  width: 100%;
 }
 
 .store_list {
@@ -66,10 +65,10 @@
   }
 }
 
-.store_more{
-    overflow: hidden;
-    position: relative;
-    height: auto;
+.store_more {
+  overflow: hidden;
+  position: relative;
+  height: auto;
 }
 
 .lineup {
@@ -128,9 +127,9 @@
     margin-left: 20px;
   }
 
-  .store_more{
+  .store_more {
     height: 247px;
-   }
+  }
 
   .store_blank {
     height: 171px;

@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 3;
+  z-index: 7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,8 +55,8 @@
   background-color: black;
 }
 
-.address_info{
-	font-weight: 400;
+.address_info {
+  font-weight: 400;
 }
 
 .popup_container #map {
