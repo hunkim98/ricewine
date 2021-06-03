@@ -28,41 +28,43 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
         {storeList.length == 0
           ? null
           : storeList.stores.map((item) => {
-              return (
-                <div
-                  className="store"
-                  onClick={() => {
-                    setAddress([item.latitude, item.longditude]);
-                    setAddressName(item.name);
-                    setAddressInfo(item.description);
-                    setClickMap(true);
-                  }}
-                >
-                  <div className="store_short_location">
-                    {item.location.substr(0, item.location.indexOf(" "))}
-                  </div>
-                  <div className="store_more">
-                    <div className="store_blank">
-                      <div className="store_name">{item.name}</div>
-                      <div className="store_ad">{item.location}</div>
+              if (!item.hidden) {
+                return (
+                  <div
+                    className="store"
+                    onClick={() => {
+                      setAddress([item.latitude, item.longditude]);
+                      setAddressName(item.name);
+                      setAddressInfo(item.description);
+                      setClickMap(true);
+                    }}
+                  >
+                    <div className="store_short_location">
+                      {item.location.substr(0, item.location.indexOf(" "))}
                     </div>
-                    <span className="lineup">
-                      {item.items.map((item_image) => {
-                        return (
-                          <div
-                            className="lineup_item"
-                            style={{
-                              backgroundImage: `url(${item_image.img_url})`,
-                            }}
-                          >
-                            {item_image.itemName}
-                          </div>
-                        );
-                      })}
-                    </span>
+                    <div className="store_more">
+                      <div className="store_blank">
+                        <div className="store_name">{item.name}</div>
+                        <div className="store_ad">{item.location}</div>
+                      </div>
+                      <span className="lineup">
+                        {item.items.map((item_image) => {
+                          return (
+                            <div
+                              className="lineup_item"
+                              style={{
+                                backgroundImage: `url(${item_image.img_url})`,
+                              }}
+                            >
+                              {item_image.itemName}
+                            </div>
+                          );
+                        })}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              );
+                );
+              }
             })}
       </div>
     </div>
