@@ -136,8 +136,8 @@
   }
 
   #store_paragraph {
-    margin-top: 0px;
-    margin-left: 60px;
+    margin-top: 25px;
+    justify-content: flex-start;
   }
 
   .store_short_location {
