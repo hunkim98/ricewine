@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Store, StoreItem, Pub
+from .models import Store, StoreItem, Pub, News
 
 
 class StoreItemSerializer(serializers.ModelSerializer):
@@ -31,3 +31,8 @@ class PubSerializer(serializers.ModelSerializer):
         model = Pub
         fields = ('id', 'name', 'location',
                   'description', 'address', 'latitude', 'longditude', 'items', 'hidden')
+
+
+class NewsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = News

@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
-from .serializers import StoreSerializer, StoreItemSerializer, PubSerializer
-from .models import Store, StoreItem, Pub
+from .serializers import StoreSerializer, StoreItemSerializer, PubSerializer, NewsSerializer
+from .models import Store, Pub, StoreItem, News
 
 
 # Create your views here.
@@ -21,4 +21,10 @@ class StoreItemView(viewsets.ModelViewSet):
 class PubView(viewsets.ModelViewSet):
     serializer_class = PubSerializer
     queryset = Pub.objects.all()
+    permissions_classes = (permissions.IsAuthenticatedOrReadOnly,)
+
+
+class NewsView(viewsets.ModelViewSet):
+    serializer_class = NewsSerializer
+    queryset = News.objects.all()
     permissions_classes = (permissions.IsAuthenticatedOrReadOnly,)

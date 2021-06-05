@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib import admin, messages
-from .models import Store, StoreItem, Pub
+from .models import Store, StoreItem, Pub, News
 from django.utils.translation import ngettext
 
 
@@ -129,3 +129,5 @@ admin.site.register(Store, StoreAdmin)
 admin.site.register(Pub, PubAdmin)
 
 admin.site.register(StoreItem)
+
+admin.site.register(News)
