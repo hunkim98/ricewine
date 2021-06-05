@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Store, StoreItem
+from .models import Store, StoreItem, Pub
 
 
 class StoreItemSerializer(serializers.ModelSerializer):
@@ -20,5 +20,14 @@ class StoreSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Store
+        fields = ('id', 'name', 'location',
+                  'description', 'address', 'latitude', 'longditude', 'items', 'hidden')
+
+
+class PubSerializer(serializers.ModelSerializer):
+    items = StoreItemSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Pub
         fields = ('id', 'name', 'location',
                   'description', 'address', 'latitude', 'longditude', 'items', 'hidden')
