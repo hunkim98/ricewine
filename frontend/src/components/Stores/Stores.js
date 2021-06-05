@@ -45,12 +45,12 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
   return (
     <div className="contents">
       <div className="title">Store</div>
-      <StoreType setShopClick={setShopClick} />
       <div id="store_paragraph">
         매장마다 재고상황이 상이할 수 있으므로 방문하시고자 하는 가게에 재고가
         있는지 미리 문의해보시기를 부탁드립니다!
       </div>
       <hr size="2px" width="100%" color="black" />
+      <StoreType setShopClick={setShopClick} />
       <div className="store_list">
         {shopPub[0] == undefined && shopPub[1] == undefined
           ? null
