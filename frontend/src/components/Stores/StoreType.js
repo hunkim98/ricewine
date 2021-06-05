@@ -5,10 +5,10 @@ function StoreType({ setShopClick }) {
   return (
     <div className="shop_or_pub_container">
       <div className="shop_or_pub" onClick={() => setShopClick(0)}>
-        <div className="shop_select">Shop</div>
+        <div className="shop_select">바틀샵</div>
       </div>
       <div className="shop_or_pub" onClick={() => setShopClick(1)}>
-        <div className="pub_select">Pub</div>
+        <div className="pub_select">주점</div>
       </div>
     </div>
   );
