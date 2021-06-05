@@ -1,0 +1,12 @@
+.shop_or_pub_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shop_or_pub {
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  background-color: azure;
+}

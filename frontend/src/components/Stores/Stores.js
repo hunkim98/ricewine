@@ -1,9 +1,14 @@
 ﻿import React, { useEffect, useState } from "react";
 
 import "./Stores.css";
+import StoreType from "./StoreType";
 
 function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
   const [storeList, setStoreList] = useState([]);
+  const [pubList, setPubList] = useState([]);
+  const [shopClick, setShopClick] = useState(0);
+  const [shopPub, setShopPub] = useState([]);
+  let shopPubTemp = [0, 0];
 
   useEffect(() => {
     fetch("api/stores")
@@ -16,18 +21,40 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
       });
   }, []);
 
+  useEffect(() => {
+    fetch("api/pubs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setPubList({ pubs: data });
+      });
+  }, []);
+
+  useEffect(() => {
+    shopPubTemp[0] = storeList.stores;
+    shopPubTemp[1] = pubList.pubs;
+    if (shopPubTemp[0] !== undefined && shopPubTemp[1] !== undefined) {
+      console.log("shopPub initialized");
+      setShopPub(shopPubTemp);
+      console.log(shopPubTemp);
+    }
+  }, [pubList, storeList]);
+
   return (
     <div className="contents">
       <div className="title">Store</div>
+      <StoreType setShopClick={setShopClick} />
       <div id="store_paragraph">
         매장마다 재고상황이 상이할 수 있으므로 방문하시고자 하는 가게에 재고가
         있는지 미리 문의해보시기를 부탁드립니다!
       </div>
       <hr size="2px" width="100%" color="black" />
       <div className="store_list">
-        {storeList.length == 0
+        {shopPub[0] == undefined && shopPub[1] == undefined
           ? null
-          : storeList.stores.map((item) => {
+          : shopPub[shopClick].map((item) => {
               if (!item.hidden) {
                 return (
                   <div
