@@ -1,10 +1,10 @@
 .store_short_location {
   position: absolute;
-  right: -20px;
-  top: -20px;
+  right: 0px;
+  top: -27px;
   z-index: 1;
   width: 90px;
-  height: 90px;
+  height: 27px;
   display: flex;
   justify-content: center;
   align-items: center;

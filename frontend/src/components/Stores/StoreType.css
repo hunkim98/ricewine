@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  border-left: solid;
   border-left-width: 0.5px; 
+  margin-top: 21px;
+  margin-bottom: 23px;
 }
 
 .shop_or_pub {
@@ -18,5 +21,5 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(188, 188, 188);
 }
