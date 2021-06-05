@@ -27,13 +27,10 @@ class Store(models.Model):
     admin_unit_details.short_description = " "
     latitude = models.CharField(max_length=50, default='')
     longditude = models.CharField(max_length=50, default='')
-    hidden = models.BooleanField(default=False)
+    visible = models.BooleanField(default=True)
 
     def __str__(self):
-        if self.hidden:
-            return self.name + " ( HIDDEN )"
-        else:
-            return self.name
+        return self.name
 
 
 class Pub(models.Model):
@@ -49,13 +46,10 @@ class Pub(models.Model):
     admin_unit_details.short_description = " "
     latitude = models.CharField(max_length=50, default='')
     longditude = models.CharField(max_length=50, default='')
-    hidden = models.BooleanField(default=False)
+    visible = models.BooleanField(default=True)
 
     def __str__(self):
-        if self.hidden:
-            return self.name + " ( HIDDEN )"
-        else:
-            return self.name
+        return self.name
 
 
 class StoreItem(models.Model):

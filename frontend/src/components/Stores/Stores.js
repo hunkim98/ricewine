@@ -55,7 +55,7 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
         {shopPub[0] == undefined && shopPub[1] == undefined
           ? null
           : shopPub[shopClick].map((item) => {
-              if (!item.hidden) {
+              if (item.visible) {
                 return (
                   <div
                     className="store"

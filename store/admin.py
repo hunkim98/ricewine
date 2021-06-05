@@ -4,6 +4,10 @@ from .models import Store, StoreItem, Pub, News
 from django.utils.translation import ngettext
 
 
+class NewsAdmin(admin.ModelAdmin):
+    list_display = ('title', 'date')
+
+
 class StoreForm(forms.ModelForm):
     class Meta:
         model = Store
@@ -34,16 +38,17 @@ class StoreForm(forms.ModelForm):
 
 class StoreAdmin(admin.ModelAdmin):
     form = StoreForm
-    fields = ('hidden', 'name', 'location', 'description', 'address',
+    fields = ('visible', 'name', 'location', 'description', 'address',
               'admin_unit_details', 'latitude', 'longditude', 'items')
 
     readonly_fields = ('admin_unit_details', )
     actions = ['make_hidden', 'make_visible']
+    list_display = ('name', 'visible', 'location')
 
     @admin.action(description='Hide selected stores')
     def make_hidden(self, request, queryset):
-        updated = queryset.update(hidden=True)
-        queryset.update(hidden=True)
+        updated = queryset.update(visible=False)
+        queryset.update(visible=False)
         self.message_user(request, ngettext(
             '%d store was successfully marked as hidden.',
             '%d stores were successfully marked as hidden',
@@ -52,8 +57,8 @@ class StoreAdmin(admin.ModelAdmin):
 
     @admin.action(description='Show selected stores')
     def make_visible(self, request, queryset):
-        updated = queryset.update(hidden=False)
-        queryset.update(hidden=False)
+        updated = queryset.update(visible=True)
+        queryset.update(visible=True)
         self.message_user(request, ngettext(
             '%d store was successfully marked as visible.',
             '%d stores were successfully marked as visible',
@@ -94,7 +99,7 @@ class PubForm(forms.ModelForm):
 
 class PubAdmin(admin.ModelAdmin):
     form = PubForm
-    fields = ('hidden', 'name', 'location', 'description', 'address',
+    fields = ('visible', 'name', 'location', 'description', 'address',
               'admin_unit_details', 'latitude', 'longditude', 'items')
 
     readonly_fields = ('admin_unit_details', )
@@ -102,8 +107,8 @@ class PubAdmin(admin.ModelAdmin):
 
     @admin.action(description='Hide selected pubs')
     def make_hidden(self, request, queryset):
-        updated = queryset.update(hidden=True)
-        queryset.update(hidden=True)
+        updated = queryset.update(visible=False)
+        queryset.update(visible=False)
         self.message_user(request, ngettext(
             '%d pub was successfully marked as hidden.',
             '%d pubs were successfully marked as hidden',
@@ -112,8 +117,8 @@ class PubAdmin(admin.ModelAdmin):
 
     @admin.action(description='Show selected pubs')
     def make_visible(self, request, queryset):
-        updated = queryset.update(hidden=False)
-        queryset.update(hidden=False)
+        updated = queryset.update(visible=True)
+        queryset.update(visible=True)
         self.message_user(request, ngettext(
             '%d pub was successfully marked as visible.',
             '%d pubs were successfully marked as visible',
@@ -130,4 +135,4 @@ admin.site.register(Pub, PubAdmin)
 
 admin.site.register(StoreItem)
 
-admin.site.register(News)
+admin.site.register(News, NewsAdmin)

@@ -21,7 +21,7 @@ class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
         fields = ('id', 'name', 'location',
-                  'description', 'address', 'latitude', 'longditude', 'items', 'hidden')
+                  'description', 'address', 'latitude', 'longditude', 'items', 'visible')
 
 
 class PubSerializer(serializers.ModelSerializer):
@@ -30,7 +30,7 @@ class PubSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pub
         fields = ('id', 'name', 'location',
-                  'description', 'address', 'latitude', 'longditude', 'items', 'hidden')
+                  'description', 'address', 'latitude', 'longditude', 'items', 'visible')
 
 
 class NewsSerializer(serializers.ModelSerializer):
