@@ -50,7 +50,7 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
         있는지 미리 문의해보시기를 부탁드립니다!
       </div>
       <hr size="2px" width="100%" color="black" />
-      <StoreType setShopClick={setShopClick} />
+      <StoreType shopClick={shopClick} setShopClick={setShopClick} />
       <div className="store_list">
         {shopPub[0] == undefined && shopPub[1] == undefined
           ? null

@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   border-left: solid;
-  border-left-width: 0.5px; 
+  border-left-width: 0.5px;
   margin-top: 21px;
   margin-bottom: 23px;
 }
@@ -22,4 +22,9 @@
   font-weight: 400;
   cursor: pointer;
   background-color: rgb(188, 188, 188);
+}
+
+.type_clicked {
+  font-weight: 600;
+  background-color: #fff;
 }
