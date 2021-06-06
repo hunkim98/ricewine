@@ -47,7 +47,10 @@ function News() {
                     if (articleYear === year) {
                       return (
                         <div className="news_detail">
-                          <span className="news_date"> {item.date} </span>
+                          <span className="news_date">
+                            .{articleDate.getMonth() + 1}.{" "}
+                            {articleDate.getUTCDate()}
+                          </span>
                           <div className="news_description">
                             <div className="news_media">
                               <a href={item.url}>{item.source}</a>
