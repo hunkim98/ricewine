@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="#" />
-    <title>Django REST with React</title>
+    <title>씨(C)막걸리</title>
   </head>
 
   <body>
@@ -17,5 +17,9 @@
     type="text/javascript"
     src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=znaixfs0cd&submodules=geocoder"
   ></script>
+  {% if 'frontend/main.js' %}
   <script src="{% static 'frontend/main.js' %}"></script>
+  {% else %}
+  <script src="{% static 'frontend/main_copy.js' %}"></script>
+  {% endif %}
 </html>
