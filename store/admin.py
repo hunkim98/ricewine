@@ -104,6 +104,7 @@ class PubAdmin(admin.ModelAdmin):
 
     readonly_fields = ('admin_unit_details', )
     actions = ['make_hidden', 'make_visible']
+    list_display = ('name', 'visible', 'location')
 
     @admin.action(description='Hide selected pubs')
     def make_hidden(self, request, queryset):
