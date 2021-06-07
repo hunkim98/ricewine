@@ -3,7 +3,13 @@
 import "./Stores.css";
 import StoreType from "./StoreType";
 
-function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
+function Stores({
+  setClickMap,
+  setAddress,
+  setAddressName,
+  setAddressInfo,
+  setAddressWord,
+}) {
   const [storeList, setStoreList] = useState([]);
   const [pubList, setPubList] = useState([]);
   const [shopClick, setShopClick] = useState(0);
@@ -63,6 +69,7 @@ function Stores({ setClickMap, setAddress, setAddressName, setAddressInfo }) {
                       setAddress([item.latitude, item.longditude]);
                       setAddressName(item.name);
                       setAddressInfo(item.description);
+                      setAddressWord(item.address);
                       setClickMap(true);
                     }}
                   >

@@ -16,6 +16,7 @@ function App() {
   const [addressInfo, setAddressInfo] = useState("");
   const [addressName, setAddressName] = useState("");
   const [button, setButton] = useState(true);
+  const [addressWord, setAddressWord] = useState("");
   useEffect(() => {
     showButton();
   }, []);
@@ -36,6 +37,7 @@ function App() {
           address={address}
           addressName={addressName}
           addressInfo={addressInfo}
+          addressWord={addressWord}
         />
       ) : null}
       <div className="app_flex_control">
@@ -53,6 +55,7 @@ function App() {
                 setAddress={setAddress}
                 setAddressName={setAddressName}
                 setAddressInfo={setAddressInfo}
+                setAddressWord={setAddressWord}
               />
             )}
           />

@@ -10,6 +10,9 @@
   position: fixed;
 }
 
+.popup_title {
+  font-size: 24px;
+}
 .popup_container .content {
   font-size: 16px;
   width: 100%;
@@ -28,9 +31,33 @@
 
 .popup_container .upper_bar {
   display: flex;
-  place-content: space-between;
+  flex-direction: column;
 }
-
+.popup_container .upper_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.popup_container .below_content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.below_content .copy_guide {
+  border: 1px solid black;
+  margin-right: 8px;
+  min-width: 55px;
+  text-align: center;
+}
+.below_content .copy_address {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.5;
+}
 .iw_inner {
   display: flex;
   flex-direction: column;
