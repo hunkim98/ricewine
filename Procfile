@@ -1,1 +1,1 @@
-web: gunicorn ricewine.wsgi --log-file -
+web: gunicorn cmakgeoli.wsgi --log-file -
