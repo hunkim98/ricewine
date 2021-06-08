@@ -1,0 +1,1 @@
+web: gunicorn ricewine.wsgi --log-file -
