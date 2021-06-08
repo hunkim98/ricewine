@@ -28,8 +28,8 @@
 }
 
 p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 27px;
   text-align: justify;
 }
 
@@ -38,8 +38,9 @@ p {
   width: 266px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 55px;
-  margin-left: 15px;
+  line-height: 49px;
+  margin-left: 23px;
+  margin-top: 10px;
 }
 
 .products {
@@ -74,8 +75,8 @@ p {
 }
 .ricewine_description {
   width: 276px;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 .ricewine_img {
