@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
 import brewery from "../images/brewery.jpg";
-import colorbar from "../images/colorbar.png";
 
 function About() {
   const [storeItems, setStoreItems] = useState([]);
