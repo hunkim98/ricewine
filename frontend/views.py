@@ -3,10 +3,16 @@ from .searchMap import search_map
 from django.http import HttpResponse
 import json
 from django.http.response import JsonResponse
+import os
 
 
 def index(request):
-    return render(request, 'frontend/index.html')
+    if(os.path.exists('frontend/static/frontend/main.js')):
+        print('opening main.js')
+        return render(request, 'frontend/index.html')
+    else:
+        print('opening main_copy.js')
+        return render(request, 'frontend/index_copy.html')
 
 
 def getLocation(request):
