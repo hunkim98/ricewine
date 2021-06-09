@@ -132,7 +132,8 @@ p {
 
 @media all and (max-width: 668px) {
   .about_contents {
-    margin: 0px;
+    margin: 20px 0px 0px 0px;
+
   }
   .title {
     font-size: 36px;
@@ -161,14 +162,11 @@ p {
   }
 
   .paragraph {
-    width: 39%;
     margin-left: 9.5vw;
   }
 
   .identity_c {
     float: right;
-    width: 35%;
-    margin-right: 60px;
   }
 
   .brewery img {

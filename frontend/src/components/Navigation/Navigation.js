@@ -2,8 +2,6 @@ import React from "react";
 import logo from "../images/logo2.png";
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
-import facebook from "../images/facebook-square-brands.svg";
-import instagram from "../images/instagram-square-brands.svg";
 
 function Navigation() {
   return (
@@ -31,15 +29,6 @@ function Navigation() {
             News
           </NavLink>
         </span>
-
-        <div className="nav_icons">
-          <a href="https://www.facebook.com/cmakgeolli">
-            <img src={facebook} />{" "}
-          </a>
-          <a href="https://www.instagram.com/cmakgeolli">
-            <img src={instagram} />{" "}
-          </a>
-        </div>
       </span>
     </div>
   );

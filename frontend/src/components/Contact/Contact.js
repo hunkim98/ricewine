@@ -14,7 +14,7 @@ function Contact() {
               <div className="contact_text2">서울 강남구 논현로 18, 2층</div>
               <br/>
               <div className="contact_text">양조장 연락처</div>
-              <div className="contact_text2">010-xxxx-xxxx</div>
+              <div className="contact_text2">010-2645-2621</div>
               <br/>
               <div className="contact_icons">
                   <a href="https://www.facebook.com/cmakgeolli">

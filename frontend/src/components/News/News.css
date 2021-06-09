@@ -23,7 +23,7 @@
 }
 
 .news_date{
-	margin-right: 47px;
+	width: 10vw;
 }
 
 @media all and (max-width:1205px) {
@@ -34,15 +34,10 @@
 
 @media all and (max-width:668px) {
 	.news_contents {
-		margin: 20px;
+		margin: 20px 0px 0px 0px;
 	}
 
 	.news_year{
 		margin: 0px 20px 105px 20px;
 	}
-
-	.news_detail{
-		display: flex;
-	}
-
 }

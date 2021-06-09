@@ -46,6 +46,7 @@
 
 .contents {
   margin: 80px 80px 80px 80px;
+  width: 100%;
 }
 
 .store_list {
@@ -123,10 +124,6 @@
     margin: 20px;
   }
 
-  .store_list {
-    margin-left: 20px;
-  }
-
   .store_more {
     height: 247px;
   }
@@ -136,7 +133,7 @@
   }
 
   #store_paragraph {
-    margin-top: 25px;
+    margin: 9.5vw;
     justify-content: flex-start;
   }
 

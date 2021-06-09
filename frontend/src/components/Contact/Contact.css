@@ -48,7 +48,7 @@
 
 @media all and (max-width:668px) {
 	.contact{
-		margin: 20px;
+		margin: 20px 0px 0px 0px;
 	}
 
 	#contact_title{
@@ -71,5 +71,9 @@
 
 	.contact_text2{
 		margin-left: 10%;
+	}
+
+	.contact_after_t{
+		margin-top: 20px;
 	}
 }
