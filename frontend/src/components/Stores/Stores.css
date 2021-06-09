@@ -25,7 +25,8 @@
   font-weight: 500;
   margin-top: 104px;
   margin-bottom: 20px;
-  width: 351px;
+  width: 100%;
+  max-width: 351px;
 }
 .item_image {
   height: 150px;
@@ -46,6 +47,7 @@
 
 .contents {
   margin: 80px 80px 80px 80px;
+  width: calc(100% - 160px);
 }
 
 .store_list {
@@ -121,6 +123,7 @@
 @media all and (max-width: 668px) {
   .contents {
     margin: 20px;
+    width: calc(100% - 40px);
   }
 
   .store_more {
@@ -132,7 +135,7 @@
   }
 
   #store_paragraph {
-    margin: 9.5vw;
+    margin-top: 70px;
     justify-content: flex-start;
   }
 
