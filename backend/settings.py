@@ -28,10 +28,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY', 'django-insecure-)#)^wmsfoo8fqf@qjs!5!cw3z!zoz1c-*-)=6_t$5q#$cv%@w(')
 
+# SECRET_KEY = 'django-insecure-)#)^wmsfoo8fqf@qjs!5!cw3z!zoz1c-*-)=6_t$5q#$cv%@w('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 cloudinary.config(
     cloud_name="cmakgeoli",
@@ -156,7 +157,8 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 REST_FRAMEWORK = {
+
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-    ]
+    ],
 }
