@@ -19,23 +19,23 @@ function Navigation_mobile() {
                 About
               </span>
             </NavLink>
-            <hr size="2px" width="80%" color="#858585" />
+            <hr size="2px" width="100%" color="#858585" />
             <NavLink exact to="/" activeClassName="now">
               <span className="mobile_menu" onClick={closeMobileMenu}>
                 Store
               </span>
             </NavLink>
-            <hr size="2px" width="80%" color="#858585" />
+            <hr size="2px" width="100%" color="#858585" />
             <NavLink to="/contact" activeClassName="now">
               <span className="mobile_menu" onClick={closeMobileMenu}>
                 Contact
               </span>
             </NavLink>
-            <hr size="2px" width="80%" color="#858585" />
+            <hr size="2px" width="100%" color="#858585" />
             <NavLink to="/news" activeClassName="now">
               <span className="mobile_menu" onClick={closeMobileMenu}>
                 News
-                <hr size="2px" width="80%" color="#858585" />
+                <hr size="2px" width="100%" color="#858585" />
               </span>
             </NavLink>
           </div>
