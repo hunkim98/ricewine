@@ -1,7 +1,29 @@
 from django import forms
 from django.contrib import admin, messages
-from .models import Store, StoreItem, Pub, News
+from .models import Store, StoreItem, Pub, News, MyLocation
 from django.utils.translation import ngettext
+
+
+class MyLocationAdmin(admin.ModelAdmin):
+
+    class Meta:
+        model = MyLocation
+        fields = '__all__'
+
+    class Media:
+        js = ('js/naver_search_map.js', )
+
+    fields = ('name', 'address',
+              'admin_unit_details', 'description',  'latitude', 'longditude', 'contact')
+
+    readonly_fields = ('admin_unit_details', )
+
+    def save_model(self, request, obj, form, change):
+        if self.model.objects.all().count() == 1 and change == False:
+            messages.set_level(request, messages.ERROR)
+            messages.error(request, 'You cannot add more than one my location')
+        else:
+            super().save_model(request, obj, form, change)
 
 
 class NewsAdmin(admin.ModelAdmin):
@@ -137,3 +159,5 @@ admin.site.register(Pub, PubAdmin)
 admin.site.register(StoreItem)
 
 admin.site.register(News, NewsAdmin)
+
+admin.site.register(MyLocation, MyLocationAdmin)

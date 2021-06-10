@@ -26,6 +26,7 @@ router.register(r'stores', views.StoreView, 'store')
 router.register(r'storeItems', views.StoreItemView, 'storeItem')
 router.register(r'pubs', views.PubView, 'pub')
 router.register(r'news', views.NewsView, 'news')
+router.register(r'myLocation', views.MyLocationView, 'myLocation')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

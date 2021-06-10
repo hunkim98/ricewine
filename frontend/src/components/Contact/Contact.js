@@ -1,33 +1,53 @@
-﻿import React from "react";
+﻿import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import facebook from "../images/facebook-square-brands.svg";
 import instagram from "../images/instagram-square-brands.svg";
 import ContactMap from "./ContactMap";
 
 function Contact() {
+  const [myLocation, setMyLocation] = useState([]);
+  useEffect(() => {
+    fetch("api/myLocation")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setMyLocation(data[0]);
+      });
+  }, []);
   return (
     <div className="contact">
-      <div className="title" id="contact_title">Contact</div>
-      <div className="contact_after_t">
-          <div className="contact_more">
-              <div className="contact_text">양조장 위치</div>
-              <div className="contact_text2">서울 강남구 논현로 18, 2층</div>
-              <br/>
-              <div className="contact_text">양조장 연락처</div>
-              <div className="contact_text2">010-2645-2621</div>
-              <br/>
-              <div className="contact_icons">
-                  <a href="https://www.facebook.com/cmakgeolli">
-                    <img src={facebook} />{" "}
-                  </a>
-                  <a href="https://www.instagram.com/cmakgeolli">
-                    <img src={instagram} />{" "}
-                  </a>
-              </div>
-          </div>
-          <ContactMap></ContactMap>
-          {/* ContactMap.js 안에 className="map" 존재 */}
+      <div className="title" id="contact_title">
+        Contact
       </div>
+      {myLocation.length !== 0 ? (
+        <div className="contact_after_t">
+          <div className="contact_more">
+            <div className="contact_text">양조장 위치</div>
+            <div className="contact_text2">{myLocation.address}</div>
+            <br />
+            <div className="contact_text">양조장 연락처</div>
+            <div className="contact_text2">{myLocation.contact}</div>
+            <br />
+            <div className="contact_icons">
+              <a href="https://www.facebook.com/cmakgeolli">
+                <img src={facebook} />{" "}
+              </a>
+              <a href="https://www.instagram.com/cmakgeolli">
+                <img src={instagram} />{" "}
+              </a>
+            </div>
+          </div>
+          <ContactMap
+            description={myLocation.description}
+            latitude={myLocation.latitude}
+            longditude={myLocation.longditude}
+            name={myLocation.name}
+          ></ContactMap>
+          {/* ContactMap.js 안에 className="map" 존재 */}
+        </div>
+      ) : null}
     </div>
   );
 }

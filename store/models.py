@@ -4,6 +4,31 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 
 
+class MyLocation(models.Model):
+    name = models.CharField(max_length=200)
+    address = models.CharField(max_length=200)
+    contact = models.CharField(max_length=200)
+    description = models.TextField()
+    latitude = models.CharField(max_length=50, default='')
+    longditude = models.CharField(max_length=50, default='')
+
+    def save(self, *args, **kwargs):
+        if not self.pk and MyLocation.objects.exists():
+            # if you'll not check for self.pk
+            # then error will also raised in update of exists model
+            return
+        return super(MyLocation, self).save(*args, **kwargs)
+
+    def admin_unit_details(self):  # Button for admin to get to API
+        return format_html(u'<a href="#" onclick="return false;" class="button" '
+                           u'id="id_search_naver_map">Search Naver Map</a>')
+    admin_unit_details.allow_tags = True
+    admin_unit_details.short_description = " "
+
+    def __str__(self):
+        return self.name
+
+
 class News(models.Model):
     title = models.CharField(max_length=200)
     source = models.CharField(max_length=200)

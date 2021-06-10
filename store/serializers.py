@@ -1,5 +1,11 @@
 from rest_framework import serializers
-from .models import Store, StoreItem, Pub, News
+from .models import Store, StoreItem, Pub, News, MyLocation
+
+
+class MyLocationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MyLocation
+        fields = '__all__'
 
 
 class StoreItemSerializer(serializers.ModelSerializer):

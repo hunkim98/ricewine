@@ -1,28 +1,20 @@
 import React, { useEffect } from "react";
 
-const c_makgeoli_location = [37.473031, 127.0498825];
-
-function ContactMap() {
+function ContactMap({ description, latitude, longditude, name }) {
   useEffect(() => {
     var map = new naver.maps.Map("map", {
-      center: new naver.maps.LatLng(
-        c_makgeoli_location[0],
-        c_makgeoli_location[1]
-      ),
+      center: new naver.maps.LatLng(longditude, latitude),
       zoom: 17,
     });
     var marker = new naver.maps.Marker({
-      position: new naver.maps.LatLng(
-        c_makgeoli_location[0],
-        c_makgeoli_location[1]
-      ),
+      position: new naver.maps.LatLng(longditude, latitude),
       map: map,
     });
     var contentString = [
       '<div class="iw_inner">',
       ' <div class="iw_content">',
-      '   <div class="address_title">C막걸리 양조장</div>',
-      '   <div class="address_info">2층으로 오시면 됩니다</div>',
+      '   <div class="address_title">' + name + "</div>",
+      '   <div class="address_info">' + description + "</div>",
       " </div>",
       ' <div class="address_point"></div>',
       "</div>",
