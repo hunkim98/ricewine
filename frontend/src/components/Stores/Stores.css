@@ -127,12 +127,16 @@
   }
 
   .store_more {
-    height: 247px;
+    height: 207px;
   }
 
   .store_blank {
-    height: 171px;
+    height: 131px;
   }
+
+  .store:hover .store_blank {
+  height: 104px;
+}
 
   #store_paragraph {
     margin: 70px 0px 20px 20px;
