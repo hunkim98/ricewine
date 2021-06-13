@@ -97,6 +97,9 @@ function About() {
           </p>
         </span>
         <img src={brewery} />
+        <img src={brewery1} />
+        <img src={brewery2} />
+        <img src={brewery3} />
       </div>
     </div>
   );
