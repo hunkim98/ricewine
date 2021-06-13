@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
 import brewery from "../images/brewery.jpg";
+import brewery1 from "../images/brewery1.jpg";
+import brewery2 from "../images/brewery2.jpg";
+import brewery3 from "../images/brewery3.jpg";
 
 function About() {
   const [storeItems, setStoreItems] = useState([]);

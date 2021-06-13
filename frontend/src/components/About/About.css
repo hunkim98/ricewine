@@ -95,22 +95,11 @@ p {
   margin: 60px 0px;
 }
 
-.brewery1 img {
+.brewery img {
   width: 60vw;
   margin-top: 20px;
   margin-left: 9.5vw;
 }
-.brewery2 img {
-  width: 60vw;
-  margin-top: 20px;
-  margin-left: 9.5vw;
-}
-.brewery3 img {
-  width: 60vw;
-  margin-top: 20px;
-  margin-left: 9.5vw;
-}
-
 
 @media all and (max-width: 1025px) {
     .paragraph {
@@ -134,15 +123,7 @@ p {
       min-width: 13.5vw;
     }
 
-    .brewery1 img {
-      margin-left: 0vw;
-    }
-
-    .brewery2 img {
-      margin-left: 0vw;
-    }
-
-    .brewery3 img {
+    .brewery img {
       margin-left: 0vw;
     }
 }
@@ -187,19 +168,8 @@ p {
     float: right;
   }
 
-  .brewery1 img {
+  .brewery img {
     width: 80%;
     margin: 0% 10%;
   }
-
-  .brewery2 img {
-    width: 80%;
-    margin: 0% 10%;
-  }
-
-  .brewery3 img {
-    width: 80%;
-    margin: 0% 10%;
-  }
-
 }
