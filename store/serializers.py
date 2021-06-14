@@ -10,15 +10,21 @@ class MyLocationSerializer(serializers.ModelSerializer):
 
 class StoreItemSerializer(serializers.ModelSerializer):
     img_url = serializers.SerializerMethodField()
+    bottle_url = serializers.SerializerMethodField()
 
     class Meta:
         model = StoreItem
-        fields = ("itemName", "description", "img_url")
+        fields = ("itemName", "description", "img_url", "bottle_url")
 
     def get_img_url(self, document):
         request = self.context.get('request')
         img_url = document.mainImage.url
         return request.build_absolute_uri(img_url)
+
+    def get_bottle_url(self, document):
+        request = self.context.get('request')
+        bottle_url = document.bottleImage.url
+        return request.build_absolute_uri(bottle_url)
 
 
 class StoreSerializer(serializers.ModelSerializer):

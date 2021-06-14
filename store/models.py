@@ -86,6 +86,7 @@ class StoreItem(models.Model):
     itemName = models.CharField(max_length=200)
     description = models.TextField()
     mainImage = CloudinaryField('image')
+    bottleImage = CloudinaryField('bottle_image')
     dateIntroduced = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
