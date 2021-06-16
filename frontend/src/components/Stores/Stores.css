@@ -130,17 +130,26 @@
     height: 207px;
   }
 
+  .lineup_item {
+  padding: 174px 0px 0px 22px;
+}
+
   .store_blank {
     height: 131px;
   }
 
   .store:hover .store_blank {
   height: 104px;
-}
+  }
+
+  .store:hover .lineup_item {
+  padding: 147px 0px 0px 22px;
+  }
 
   #store_paragraph {
     margin: 70px 0px 20px 20px;
     justify-content: flex-start;
+    width: auto;
   }
 
   .store_short_location {

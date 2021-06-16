@@ -157,20 +157,28 @@ p {
       width: 78vw;
   }
 
+  .ricewine_product {
+  display: flex;
+  margin: 25px 0px 25px 0px;
+  }
+
   .ricewine_description {
       width: auto;
    }
 
   .ricewine_img {
-      min-width: 20.5vw;
+      min-width: 30.5vw;
   }
 
   .paragraph {
-    margin-left: 9.5vw;
+    width: auto;
+    margin: 0vw 9.5vw;
   }
 
   .identity_c {
     float: right;
+    width: auto;
+    margin-right: 9.5vw;
   }
 
   .brewery img {
