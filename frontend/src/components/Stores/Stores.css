@@ -58,7 +58,7 @@
 .store {
   position: relative;
   width: 45%;
-  margin: 20px;
+  margin: 30px 20px;
 }
 
 @media all and (max-width: 1280px) {
