@@ -9,6 +9,7 @@ import Navigation_mobile from "./Navigation/Navigation_mobile";
 import Navigation_mobile_logo from "./Navigation/Navigation_mobile_logo";
 import Contact from "./Contact/Contact";
 import News from "./News/News";
+import Footer from "./Footer/Footer";
 import "./App.css";
 function App() {
   const [clickMap, setClickMap] = useState(false);
@@ -64,6 +65,7 @@ function App() {
           <Route path="/news" render={(props) => <News {...props} />} />
         </Switch>
       </div>
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
