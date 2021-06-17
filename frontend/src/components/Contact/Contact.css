@@ -51,12 +51,28 @@
 		margin: 20px 0px 0px 0px;
 	}
 
+	.contact_after_t{
+	display: block;
+	}
+
+	.contact_more{
+	display: flex;
+	margin: 0% 10%;
+	}
+
+	.contact_texts{
+		display: block;
+	}
+
+
 	#contact_title{
 		margin: 0px;
 	}
 
 	.contact_icons{
-		margin: 0% 10%;
+		margin-right: 10%;
+		text-align: right;
+		width: 50%;
 	}
 
 	.contact img{
@@ -66,14 +82,15 @@
 
 	.contact_text{
 		font-size: 22px;
-		margin-left: 10%;
-	}
-
-	.contact_text2{
-		margin-left: 10%;
 	}
 
 	.contact_after_t{
 		margin-top: 20px;
+	}
+
+	.map{
+		width: 80%;
+		height: 300px;
+		margin: 0px 10%;
 	}
 }
