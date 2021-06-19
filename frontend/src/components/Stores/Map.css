@@ -11,7 +11,7 @@
 }
 
 .popup_title {
-  font-size: 24px;
+  font-size: 21px;
 }
 .popup_container .content {
   font-size: 16px;
@@ -76,7 +76,8 @@
   padding-right: 5px;
 }
 .iw_inner .address_title {
-  font-size: 18 px;
+  font-size: 16 px;
+  margin-top: 4px;
 }
 
 .iw_inner .address_point {
@@ -87,6 +88,7 @@
 
 .address_info {
   font-weight: 400;
+  margin-bottom: 4px;
 }
 
 .popup_container #map {
