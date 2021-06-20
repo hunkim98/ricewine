@@ -4,18 +4,7 @@ import facebook from "../images/facebook-square-brands.svg";
 import instagram from "../images/instagram-square-brands.svg";
 import ContactMap from "./ContactMap";
 
-function Contact() {
-  const [myLocation, setMyLocation] = useState([]);
-  useEffect(() => {
-    fetch("api/myLocation")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setMyLocation(data[0]);
-      });
-  }, []);
+function Contact({ myLocation }) {
   return (
     <div className="contact">
       <div className="title" id="contact_title">
@@ -25,12 +14,12 @@ function Contact() {
         <div className="contact_after_t">
           <div className="contact_more">
             <div className="contact_texts">
-                <div className="contact_text">양조장 위치</div>
-                <div className="contact_text2">{myLocation.address}</div>
-                <br />
-                <div className="contact_text">양조장 연락처</div>
-                <div className="contact_text2">{myLocation.contact}</div>
-                <br />
+              <div className="contact_text">양조장 위치</div>
+              <div className="contact_text2">{myLocation.address}</div>
+              <br />
+              <div className="contact_text">양조장 연락처</div>
+              <div className="contact_text2">{myLocation.contact}</div>
+              <br />
             </div>
             <div className="contact_icons">
               <a href="https://www.facebook.com/cmakgeolli">

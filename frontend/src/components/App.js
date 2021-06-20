@@ -18,6 +18,17 @@ function App() {
   const [addressName, setAddressName] = useState("");
   const [button, setButton] = useState(true);
   const [addressWord, setAddressWord] = useState("");
+  const [myLocation, setMyLocation] = useState([]);
+  useEffect(() => {
+    fetch("api/myLocation")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setMyLocation(data[0]);
+      });
+  }, []);
   useEffect(() => {
     showButton();
   }, []);
@@ -61,11 +72,14 @@ function App() {
             )}
           />
           <Route path="/about" render={(props) => <About {...props} />} />
-          <Route path="/contact" render={(props) => <Contact {...props} />} />
+          <Route
+            path="/contact"
+            render={(props) => <Contact {...props} myLocation={myLocation} />}
+          />
           <Route path="/news" render={(props) => <News {...props} />} />
         </Switch>
       </div>
-      {/* <Footer /> */}
+      <Footer myLocation={myLocation} />
     </BrowserRouter>
   );
 }
