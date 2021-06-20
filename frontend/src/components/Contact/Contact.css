@@ -23,13 +23,13 @@
 }
 
 .contact_text{
-	font-weight: 700;
-	font-size: 24px;
+	font-weight: 500;
+	font-size: 18px;
 }
 
 .contact_text2{
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .map{
@@ -70,9 +70,8 @@
 	}
 
 	.contact_icons{
-		margin-right: 10%;
 		text-align: right;
-		width: 50%;
+		width: 100%;
 	}
 
 	.contact img{
@@ -81,7 +80,8 @@
 	}
 
 	.contact_text{
-		font-size: 22px;
+		font-size: 20px;
+		width: 100%;
 	}
 
 	.contact_after_t{

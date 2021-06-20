@@ -14,7 +14,7 @@ function StoreType({ setShopClick, shopClick }) {
         className={shopClick == 1 ? "shop_or_pub type_clicked" : "shop_or_pub"}
         onClick={() => setShopClick(1)}
       >
-        <div className="pub_select">주점</div>
+        <div className="pub_select">주점/식당</div>
       </div>
     </div>
   );

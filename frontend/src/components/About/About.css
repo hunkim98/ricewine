@@ -9,14 +9,14 @@
 }
 
 .title {
-  font-weight: 750;
-  font-size: 36px;
+  font-weight: 600;
+  font-size: 32px;
   margin-bottom: 27px;
 }
 
 .title2 {
-  font-weight: 750;
-  font-size: 36px;
+  font-weight: 600;
+  font-size: 32px;
   margin-bottom: 27px;
   margin-left: 9.5vw;
 }
@@ -176,9 +176,8 @@ p {
   }
 
   .identity_c {
-    float: right;
     width: auto;
-    margin-right: 9.5vw;
+    margin: 0vw 9.5vw;
   }
 
   .brewery img {

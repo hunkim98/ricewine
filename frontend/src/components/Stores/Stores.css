@@ -76,7 +76,7 @@
 .lineup {
   display: table;
   width: 100%;
-  height: 380px;
+  height: 340px;
   color: white;
   font-size: 16px;
   font-weight: 550;
@@ -84,7 +84,7 @@
 .lineup_item {
   display: table-cell;
   width: 33%;
-  padding: 284px 0px 0px 22px;
+  padding: 244px 0px 0px 22px;
   transition: padding 0.5s;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +94,7 @@
   position: absolute;
   background: #bcbcbc;
   width: 100%;
-  height: 241px;
+  height: 201px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 25px 8px 0px 8px;
   transition: height 0.5s;

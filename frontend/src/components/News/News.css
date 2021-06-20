@@ -9,9 +9,9 @@
 
 .news_year{
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   display: flex;
-  margin-bottom: 105px;
+  margin-bottom: 73px;
 }
 
 .news_detail{
@@ -25,6 +25,15 @@
 .news_date{
 	width: 10vw;
 }
+
+.news_media{
+
+}
+
+.news_title{
+
+}
+
 
 @media all and (max-width:1205px) {
 	.news_detail{
