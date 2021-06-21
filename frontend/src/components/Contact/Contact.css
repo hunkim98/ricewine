@@ -58,10 +58,12 @@
 	.contact_more{
 	display: flex;
 	margin: 0% 10%;
+	width: auto;
 	}
 
 	.contact_texts{
 		display: block;
+		width: 100%;
 	}
 
 
