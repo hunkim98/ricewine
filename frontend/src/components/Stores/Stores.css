@@ -64,6 +64,8 @@
 @media all and (max-width: 1280px) {
   .store {
     width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -147,7 +149,7 @@
   }
 
   #store_paragraph {
-    margin: 70px 0px 20px 20px;
+    margin: 70px 0px 0px 0px;
     justify-content: flex-start;
     width: auto;
   }

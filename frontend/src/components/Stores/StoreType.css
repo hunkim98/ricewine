@@ -29,8 +29,3 @@
   background-color: #fff;
 }
 
-@media all and (max-width: 668px) {
-	.shop_or_pub_container {
-	  margin-left: 9.5vw;
-	}
-}
