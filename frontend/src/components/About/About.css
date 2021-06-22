@@ -138,6 +138,7 @@ p {
   .title {
     font-size: 32px;
     margin: 0px;
+    margin-bottom: 27px;
     margin-inline-start: 42px;
     text-align: left;
     width: 100%;
