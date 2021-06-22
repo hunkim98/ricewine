@@ -24,10 +24,11 @@
 
 .news_date{
 	width: 10vw;
+	margin-block-end: 7px;
 }
 
 .news_media{
-
+	margin-block-end: 7px;
 }
 
 .news_title{
@@ -49,4 +50,5 @@
 	.news_year{
 		margin: 0px 20px 105px 20px;
 	}
+
 }
