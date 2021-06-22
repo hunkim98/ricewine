@@ -48,7 +48,7 @@ function News() {
                       return (
                         <div className="news_detail">
                           <span className="news_date">
-                            .{articleDate.getMonth() + 1}.{" "}
+                            {articleDate.getMonth() + 1}{" "}/{" "}
                             {articleDate.getUTCDate()}
                           </span>
                           <div className="news_description">
