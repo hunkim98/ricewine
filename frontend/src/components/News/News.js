@@ -62,7 +62,6 @@ function News() {
                     }
                   })}
                 </div>
-              <hr size="2px" width="100%" color="black" />
               </div>
             );
           })}
