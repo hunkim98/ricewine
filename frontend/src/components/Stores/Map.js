@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import black_square from "../images/black_square.png"
 import "./Map.css";
 
 function Map({ setClickMap, address, addressName, addressInfo, addressWord }) {
@@ -12,6 +13,12 @@ function Map({ setClickMap, address, addressName, addressInfo, addressWord }) {
     var marker = new naver.maps.Marker({
       position: new naver.maps.LatLng(address[1], address[0]),
       map: map,
+       icon: {
+         url: black_square,
+         size: new naver.maps.Size(12, 12),
+         origin: new naver.maps.Point(0, 0),
+         anchor: new naver.maps.Point(6, 6)
+      }
     });
     var contentString = [
       '<div class="iw_inner">',

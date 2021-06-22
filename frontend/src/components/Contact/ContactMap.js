@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import black_square from "../images/black_square.png"
 
 function ContactMap({ description, latitude, longditude, name }) {
   useEffect(() => {
@@ -9,6 +10,12 @@ function ContactMap({ description, latitude, longditude, name }) {
     var marker = new naver.maps.Marker({
       position: new naver.maps.LatLng(longditude, latitude),
       map: map,
+      icon: {
+        url: black_square,
+        size: new naver.maps.Size(12, 12),
+        origin: new naver.maps.Point(0, 0),
+        anchor: new naver.maps.Point(6, 6)
+      }
     });
     var contentString = [
       '<div class="iw_inner">',

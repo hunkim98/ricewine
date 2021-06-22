@@ -3,6 +3,11 @@
 	width: 100%;
 }
 
+.map img {
+	width: 50px;
+	height: 50px;
+}
+
 #contact_title{
 	margin-bottom: 125px
 }
@@ -15,7 +20,7 @@
 	width: 385px;
 }
 
-.contact img{
+.contact_icons img{
 	float: left;
 	margin: 0px 5px;
 	width: 35px;
