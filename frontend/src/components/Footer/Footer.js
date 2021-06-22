@@ -12,24 +12,16 @@ function Footer({ myLocation }) {
             <div className="left_information">
               <span>회사명: C막걸리</span>
               <br />
-              <span>대표자: 최영은</span>
-              <br />
               <span>{"주소:" + myLocation.address}</span>
               <br />
-              <span>사업자등록번호: XXX</span>
-              <br />
-              <span>{"전화: " + myLocation.contact}</span>
-              <br />
-            </div>
-            <div className="right_information">
-              <div className="upper_footer_information">
-                <span>Contemporary Makgeoli Brewery</span>
+              <span>Contemporary Makgeoli Brewery</span>
                 <br />
                 <span>Orignally From Seoul</span>
                 <br />
                 <span>Established 2020.</span>
-                <br />
-                <br />
+            </div>
+            <div className="right_information">
+              <div className="upper_footer_information">
                 <span>COPYRIGHT 2021.</span>
                 <br />
                 <span>Cmakgeoli. All Rights Reserverd</span>
