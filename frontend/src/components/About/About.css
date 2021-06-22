@@ -138,13 +138,16 @@ p {
   .title {
     font-size: 32px;
     margin: 0px;
-    text-align: center;
+    margin-inline-start: 42px;
+    text-align: left;
     width: 100%;
   }
   .title2 {
     font-size: 32px;
     margin: 0px;
-    text-align: center;
+    margin-inline-start: 42px;
+    text-align: left;
+    ;
   }
 
   .products img {
