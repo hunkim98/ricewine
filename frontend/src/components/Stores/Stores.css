@@ -130,23 +130,28 @@
   }
 
   .store_more {
-    height: 207px;
+    height: 32vh;
   }
 
+  .lineup {
+  font-size: 3vw;
+  height: 32vh;
+}
+
   .lineup_item {
-      padding: 174px 0px 0px 22px;
+      padding: 25vh 0px 0px 4vw;
   }
 
   .store_blank {
-    height: 131px;
+    height: 18vh;
   }
 
   .store:hover .store_blank {
-    height: 104px;
+    height: 15vh;
   }
 
   .store:hover .lineup_item {
-    padding: 147px 0px 0px 22px;
+    padding: 22vh 0px 0px 4vw;
   }
 
   #store_paragraph {
