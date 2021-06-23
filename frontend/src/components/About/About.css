@@ -103,52 +103,45 @@ p {
 }
 
 @media all and (max-width: 1025px) {
-    .paragraph {
-      width: 335px;
-      margin-left: 0vw;
-    }
-
-    .title2 {
-        margin-left: 0px;
-    }
-
-    .ricewine_product_container {
+  .paragraph {
+    width: 335px;
     margin-left: 0vw;
-    }
+  }
 
-    .ricewine_description {
-      width: 130px;
-    }
+  .title2 {
+    margin-left: 0px;
+  }
 
-    .ricewine_img {
-      min-width: 13.5vw;
-    }
+  .ricewine_product_container {
+    margin-left: 0vw;
+  }
 
-    .brewery img {
-      margin-left: 0vw;
-    }
+  .ricewine_description {
+    width: 130px;
+  }
+
+  .ricewine_img {
+    min-width: 13.5vw;
+  }
+
+  .brewery img {
+    margin-left: 0vw;
+  }
 }
-
 
 @media all and (max-width: 668px) {
   .about_contents {
     margin: 20px 0px 0px 0px;
-
   }
   .title {
     font-size: 32px;
-    margin: 0px;
     margin-bottom: 27px;
-    margin-inline-start: 42px;
-    text-align: left;
-    width: 100%;
   }
   .title2 {
     font-size: 32px;
     margin: 0px;
     margin-inline-start: 42px;
     text-align: left;
-    ;
   }
 
   .products img {
@@ -157,21 +150,21 @@ p {
   }
 
   .ricewine_product_container {
-      margin-left: 9.5vw;
-      width: 78vw;
+    margin-left: 9.5vw;
+    width: 78vw;
   }
 
   .ricewine_product {
-  display: flex;
-  margin: 25px 0px 25px 0px;
+    display: flex;
+    margin: 25px 0px 25px 0px;
   }
 
   .ricewine_description {
-      width: auto;
-   }
+    width: auto;
+  }
 
   .ricewine_img {
-      min-width: 30.5vw;
+    min-width: 30.5vw;
   }
 
   .paragraph {

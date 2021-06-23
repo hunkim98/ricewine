@@ -1,103 +1,101 @@
-.contact{
-	margin: 80px 80px 80px 80px;
-	width: 100%;
+.contact {
+  margin: 80px 80px 80px 80px;
+  width: 100%;
 }
 
 .map img {
-	width: 50px;
-	height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-#contact_title{
-	margin-bottom: 125px
+#contact_title {
+  margin-bottom: 125px;
 }
 
-.contact_after_t{
-	display: flex;
+.contact_after_t {
+  display: flex;
 }
 
-.contact_more{
-	width: 385px;
+.contact_more {
+  width: 385px;
 }
 
-.contact_icons img{
-	float: left;
-	margin: 0px 5px;
-	width: 35px;
-	opacity: 0.3;
+.contact_icons img {
+  float: left;
+  margin: 0px 5px;
+  width: 35px;
+  opacity: 0.3;
 }
 
-.contact_text{
-	font-weight: 500;
-	font-size: 18px;
+.contact_text {
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.contact_text2{
-	font-weight: 400;
-	font-size: 16px;
+.contact_text2 {
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.map{
-	width: 53vw;
-	height: 776px;
-	box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+.map {
+  width: 53vw;
+  height: 776px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media all and (max-width: 1460px){
-	.map{
-		width: 100%;
-		height: 500px;
-		margin: 0px 20px;
-	}
+@media all and (max-width: 1460px) {
+  .map {
+    width: 100%;
+    height: 500px;
+    margin: 0px 20px;
+  }
 }
 
-@media all and (max-width:668px) {
-	.contact{
-		margin: 20px 0px 0px 0px;
-	}
+@media all and (max-width: 668px) {
+  #contact_title {
+    margin-left: 40px;
+  }
+  .contact {
+    margin: 20px 0px 0px 0px;
+  }
 
-	.contact_after_t{
-	display: block;
-	}
+  .contact_after_t {
+    display: block;
+  }
 
-	.contact_more{
-	display: flex;
-	margin: 0% 10%;
-	width: auto;
-	}
+  .contact_more {
+    display: flex;
+    margin: 0% 10%;
+    width: auto;
+  }
 
-	.contact_texts{
-		display: block;
-		width: 100%;
-	}
+  .contact_texts {
+    display: block;
+    width: 100%;
+  }
 
+  .contact_icons {
+    text-align: right;
+    width: 100%;
+  }
 
-	#contact_title{
-		margin: 0px;
-	}
+  .contact img {
+    float: none;
+    margin: 0px;
+  }
 
-	.contact_icons{
-		text-align: right;
-		width: 100%;
-	}
+  .contact_text {
+    font-size: 20px;
+    width: 100%;
+  }
 
-	.contact img{
-		float: none;
-		margin: 0px;
-	}
+  .contact_after_t {
+    margin-top: 20px;
+  }
 
-	.contact_text{
-		font-size: 20px;
-		width: 100%;
-	}
-
-	.contact_after_t{
-		margin-top: 20px;
-	}
-
-	.map{
-		width: 80%;
-		height: 300px;
-		margin: 0px 10%;
-	}
+  .map {
+    width: 80%;
+    height: 300px;
+    margin: 0px 10%;
+  }
 }

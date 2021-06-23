@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   background-color: #efefef;
-  border: 1px solid black;
+  border: 1px solid rgb(22, 21, 21);
 }
 
 .store_container {
@@ -124,6 +124,9 @@
 }
 
 @media all and (max-width: 668px) {
+  #store_title {
+    margin-left: 20px;
+  }
   .contents {
     margin: 20px;
     width: calc(100% - 40px);
@@ -134,12 +137,12 @@
   }
 
   .lineup {
-  font-size: 3vw;
-  height: 32vh;
-}
+    font-size: 3vw;
+    height: 32vh;
+  }
 
   .lineup_item {
-      padding: 25vh 0px 0px 4vw;
+    padding: 25vh 0px 0px 4vw;
   }
 
   .store_blank {
@@ -166,11 +169,11 @@
 }
 
 @media all and (max-width: 400px) {
-    .store_name {
-      font-size: 20px;
-    }
+  .store_name {
+    font-size: 20px;
+  }
 
-    .store_ad {
-      font-size: 14px;
-    }
+  .store_ad {
+    font-size: 14px;
+  }
 }
