@@ -23,8 +23,11 @@
 }
 
 .news_date {
-  width: 10vw;
-  margin-block-end: 7px;
+  width: 30px;
+  margin-block-end: 4px;
+  display: block;
+  margin-right: 36px;
+
 }
 
 .news_media {
