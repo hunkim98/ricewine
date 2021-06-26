@@ -81,12 +81,12 @@
 
   .contact_icons img {
     margin-right: 0px;
-    margin-left: 10px;
+    margin-left: 9px;
   }
 
   .contact img {
     float: none;
-    margin: 0px;
+    margin-right: 0px;
   }
 
   .contact_text {
