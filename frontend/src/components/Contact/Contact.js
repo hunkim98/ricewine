@@ -1,7 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import "./Contact.css";
-import facebook from "../images/facebook-square-brands.svg";
-import instagram from "../images/instagram-square-brands.svg";
+import facebook from "../images/facebook-brands.svg";
+import instagram from "../images/instagram-brands.svg";
 import ContactMap from "./ContactMap";
 
 function Contact({ myLocation }) {
