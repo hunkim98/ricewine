@@ -22,9 +22,9 @@
 
 .contact_icons img {
   float: left;
-  margin: 0px 5px;
+  margin-right: 7px;
   width: 35px;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .contact_text {
@@ -77,6 +77,11 @@
   .contact_icons {
     text-align: right;
     width: 100%;
+  }
+
+  .contact_icons img {
+    margin-right: 0px;
+    margin-left: 10px;
   }
 
   .contact img {
