@@ -4,7 +4,7 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
 	 style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M504,256C504,119,393,8,256,8S8,119,8,256c0,123.8,90.7,226.4,209.2,245V327.7h-63V256h63v-54.6
 	c0-62.2,37-96.5,93.7-96.5c27.1,0,55.5,4.8,55.5,4.8v61h-31.3c-30.8,0-40.4,19.1-40.4,38.7V256h68.8l-11,71.7h-57.8V501
