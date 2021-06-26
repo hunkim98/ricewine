@@ -48,14 +48,16 @@ function News() {
                       return (
                         <div className="news_detail">
                           <span className="news_date">
-                            {articleDate.getMonth() + 1} / {" "}
+                            {articleDate.getMonth() + 1} /{" "}
                             {articleDate.getUTCDate()}
                           </span>
                           <div className="news_description">
                             <div className="news_media">
                               <a href={item.url}>{item.source}</a>
                             </div>
-                            <div className="news_title">{item.title}</div>
+                            <a href={item.url} className="news_title">
+                              {item.title}
+                            </a>
                           </div>
                         </div>
                       );
