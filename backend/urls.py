@@ -39,7 +39,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api-auto', include('rest_framework.urls')),
     path('', include('frontend.urls')),
-    path('robots.txt/', lambda x: HttpResponse("User-Agent: *\nDisallow: /admin/",
+    path('robots.txt/', lambda x: HttpResponse("User-Agent: *\nDisallow: /admin/\nDisallow: /api/\nDisallow: /static/",
                                                content_type="text/plain")),
     path('favicon.ico', okay),
 ]
