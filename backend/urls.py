@@ -29,6 +29,11 @@ router.register(r'pubs', views.PubView, 'pub')
 router.register(r'news', views.NewsView, 'news')
 router.register(r'myLocation', views.MyLocationView, 'myLocation')
 
+
+def okay(request):
+    return HttpResponse('pretend-binary-data-here', content_type='image/jpeg')
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
@@ -36,4 +41,5 @@ urlpatterns = [
     path('', include('frontend.urls')),
     path('robots.txt/', lambda x: HttpResponse("User-Agent: *\nDisallow: /admin/",
                                                content_type="text/plain")),
+    path('favicon.ico', okay),
 ]
