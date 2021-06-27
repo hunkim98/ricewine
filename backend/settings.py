@@ -32,7 +32,8 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://www.cmakgeolli.com/',
+                 'https://cmakgeoli.herokuapp.com/', 'http://127.0.0.1:8000/', 'localhost']
 
 cloudinary.config(
     cloud_name="cmakgeoli",
