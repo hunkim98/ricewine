@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.http import HttpResponse
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
@@ -33,4 +34,6 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api-auto', include('rest_framework.urls')),
     path('', include('frontend.urls')),
+    path('robots.txt/', lambda x: HttpResponse("User-Agent: *\nDisallow: /admin/",
+                                               content_type="text/plain")),
 ]
