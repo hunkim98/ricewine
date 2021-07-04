@@ -48,12 +48,12 @@
 }
 
 .mobile_nav_button {
-  margin: 34px 30px 0px 0px;
+  margin: 43px 32px 0px 0px;
   width: 61px;
   height: 61px;
   pointer-events: auto;
 }
 
-.mobile_nav_button img{
+.mobile_nav_button img {
   width: 100%;
 }

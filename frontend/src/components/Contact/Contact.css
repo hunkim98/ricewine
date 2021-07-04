@@ -54,6 +54,7 @@
 @media all and (max-width: 668px) {
   #contact_title {
     margin-left: 40px;
+    margin-bottom: 60px;
   }
   .contact {
     margin: 20px 0px 0px 0px;
